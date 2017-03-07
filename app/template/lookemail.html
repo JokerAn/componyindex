@@ -1,0 +1,63 @@
+<div id="lookemail">
+
+    <script type="text/javascript">
+        function sendsubmit() {
+            $.ajax({
+                type: 'post',
+                url: 'registerresend',
+                data: 'userEmail=' + $("#userEmail").val(),
+                success: function () {
+                    $("#resend").text("已重新发送");
+                }
+            });
+        }
+    </script>
+
+    <input type="hidden" id="userEmail" value="work@z.com"/>
+    <section id="div_mobile" class="page" style="min-height: 560px;">
+        <div id="home" class="home">
+            <section>
+                <div style="width: auto; height: 350px;">
+                    <div style="padding: 50px; background: #eee; margin: 130px 170px 130px 170px; height: 280px;">
+                        <div>
+                            <legend>已发送</legend><!-- 注册 -->
+                        </div>
+                        <div style="overflow: hidden;">
+                            <div class="zh fl"
+                                 style="width: 400px;text-align: left;color: #3a87af;padding: 0px 16px;height: 68px;">
+
+                                <span class="fl" style="width:100%;float: left;">
+                                    <span style="    width: 31px;height: 31px;float: left;background:url('./images/duihao_.png') no-repeat;"></span>
+                                    <span>注册确认邮件发送成功，请查收。</span>
+                                </span>
+                                <br>
+                                <a href="javascript:;" class="fl"
+                                   style="float: left;    text-decoration: underline; margin-left:35px;">
+                                    {{email}}
+                                </a>
+                            </div>
+                            <div class="zh "
+                                 style="width:380px;text-align: left;    background: #e5e5e5;    color: #d8ae52;padding: 0 18px">
+                                <!-- 重发： -->
+                                如果没有收到确认邮件，可以尝试以下做法:
+                                <br>
+                                <p style="    margin: 0;">
+                                    <span style="border-radius: 50%;width: 4px;height: 4px;display: inline-block;background: #c29952;"></span>
+                                    检查邮件是否在垃圾邮件中；
+                                </p>
+                                <p style="    margin: 0;">
+                                    <span style="border-radius: 50%;width: 4px;height: 4px;display: inline-block;background: #c29952;"></span>
+                                    <a id="resend" href="javascript:;" onclick="sendsubmit()">
+                                        [重发]
+                                    </a>
+                                    确认邮件。
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+</div>

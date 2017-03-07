@@ -1,0 +1,196 @@
+<div id="jkgl" class="clear">
+    <input class="leftLight" type="hidden" value="0" name="jkglclass">
+
+    <div class="show" style="position: relative;">
+        <div class="clear">
+            <div ng-include src="'left.html'"></div>
+            <div class="show-word fl">
+                <div class="show-word-top">
+                    <h2><span>监控与管理</span></h2>
+                    <p>龙腾云为您提供免费的云监控以及易用的云计算资源管理，为您呈现出立体化云产品数据监控，自动化资源部署及运维，实时化故障告警。让您简单方便的实现对资源的部署、管理与监控。</p>
+                </div>
+                <div class="show-word-down">
+                    <button ng-click="gotoPage('/denglu')">立即使用</button>
+                    <!--<button>价格计算</button>-->
+                </div>
+            </div>
+            <div class="show-img fr">
+                <img src="images/jiankongyuguanli.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div style="position: relative;">
+        <div class="main-content">
+            <div class="clear stitle">
+                <ul class="">
+                    <li><a href="" class="md" name="#a1s">产品优势</a></li>
+                    <li><a href="" class="md" name="#a2">功能描述</a></li>
+                    <li><a href="" class="md" name="#a3">产品架构</a></li>
+                    <li><a href="" class="md" name="#a4">行业应用</a></li>
+                </ul>
+                <div class="clear ">
+                    <button ng-click="gotoPage('/denglu')">立即使用</button>
+                    <!--<button>价格计算</button>-->
+                </div>
+            </div>
+            <script>
+                smallt.stitleH = $(".stitle").offset().top;//页面加载就取下固定值
+                smallt.left = parseInt($(".stitle").css("left"));
+            </script>
+            <div>
+
+                <div class="contents container-fluid  ct3">
+                    <a id="a1s"></a>
+                    <h3>产品优势<span class="fr"></span></h3>
+                    <div>
+                        <div class="row">
+                            <table class="col-md-12">
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-2"><h4>优势点</h4></td>
+                                    <td class="col-md-6" style="position: relative">
+                                        <h4>监控与管理</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class=" ">
+                                        <p>免费开通</p>
+                                    </td>
+                                    <td>
+                                        <p>云监控无需购买和开通，拥有龙腾云便自动开通了管理与云监控服务，
+                                            方便您在购买和使用龙腾云产品后直接查看云监控，设置定时器细化管理。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p>多指标监控</p>
+                                    </td>
+                                    <td>
+                                        <p>云监控为您提供了云服务器CPU利用率、内存利用率、磁盘利用率以及网络带宽使用率等各项云服务负载和性能指标，通过直观图表展示出来。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p>自动化管理</p>
+                                    </td>
+                                    <td>
+                                        <p>您可以利用龙腾云提供的定时器，轻松管理云服务器的开关机、分时段自动调整带宽大小，定时自动备份，轻松便捷的实现自动化运维。</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p>全时服务</p>
+                                    </td>
+                                    <td>
+                                        <p>提供7*24小时的实时监控服务，为您的系统保驾护航。1V1在线工单系统、最快速度的解决您的疑惑。</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents container-fluid  ctul-img">
+                    <div class="row clear">
+                        <a id="a2"></a>
+                        <h3>功能描述<span class="fr"></span></h3>
+                        <p>备份(Snapshot)用于在块设备级别(block device level)上进行磁盘的备份与恢复，可以同时对多张硬盘做备份(包括系统磁盘和数据)，
+                            也可以对正在运行的主机做在线备份。一块硬盘可以有多个备份链，每条备份链包括一个全量备份点以及多个增量备份点，您可以随时从任意一个备份点恢复数据。</p>
+                        <ul class="fl">
+                            <li>
+                                <h4>全面监控</h4>
+                                <p>主机、路由器、硬盘、公网IP、负载均衡器都具备完整全面的历史监控和实时监控信息。</p>
+                            </li>
+                            <li>
+                                <h4>图形化界面</h4>
+                                <p>直观展示主机及其相关资源，并可以直接操作图形，所有改动自动更新。</p>
+                            </li>
+                            <li>
+                                <h4>操作日志</h4>
+                                <p>记录下用户所有重要操作历史，方便定位和查找。</p>
+                            </li>
+                            <li>
+                                <h4>备份链可视化</h4>
+                                <p>既对于备份各节点一目了然，同时可直接操作新建备份及回滚到之前的状态。</p>
+                            </li>
+                            <li>
+                                <h4>灵活的定时器</h4>
+                                <p>可定义周期性任务自动执行资源操作，如开/关主机、创建备份和调节带宽等。</p>
+                            </li>
+                            <li>
+                                <h4>通知告警</h4>
+                                <p>用于接收监控告警通知、定时器任务执行结果。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contents ct4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <a id="a3"></a>
+                            <h3>产品架构</h3>
+                            <div class="neirong clear">
+                                <ul class="clear neirong-title">
+                                    <li style="background:#fff" class="col-md-6"><a style="color:#2277e6;"
+                                                                                    href="javascript:;">日常巡检</a></li>
+                                    <li class="col-md-6"><a href="javascript:;">分时段带宽调整</a></li>
+
+                                </ul>
+                                <div class="neirong-content nr0 col-md-12">
+                                    <p>若您在日常巡检操作中，想全面掌控各个云产品的整体状况：
+                                        浏览云监控控制台，云服务器产品监控视图，如果CPU使用率为业务关键指标，则选择该列点击排序。此排序是最近5分钟内的实时监控数据，能看出在最近5分钟内，哪台云服务器CPU使用率最高、哪台云服务器CPU使用率最低、相差多少，对比查看下，即可发现异常。若想查看历史某天异常云服务器，则选择时间，以关键指标排序找出异常云服务器。一天的指标数据取当天所有监控周期的最大值。</p>
+                                </div>
+                                <div class="neirong-content nr1 col-md-12" style="display: none;">
+                                    <p>
+                                        很多游戏公司的带宽需求会在不同时间段有着较大差距。根据对自己公司业务的具体分析，利用龙腾云提供的定时器，在不同时间段设置不同的带宽大小。这样，不仅可以大大降低公司的运营成本，还能帮助公司打造一个自动化运维的范本。</p>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contents container-fluid ct1">
+                    <div class="row">
+                        <a id="a4"></a>
+                        <h3>行业应用<span class="fr"></span></h3>
+                        <div class="img-center clear" title="行业应用">
+                            <div>
+                                <img src="images/sydw.png" alt="">
+                                <p>企事业单位</p>
+                            </div>
+                            <div>
+                                <img src="images/game.png" alt="">
+                                <p>游戏</p>
+                            </div>
+                            <div>
+                                <img src="images/jinrong.png" alt="">
+                                <p>金融</p>
+                            </div>
+                            <div>
+                                <img src="images/syhz.png" alt="">
+                                <p>商业企业</p>
+                            </div>
+                            <div>
+                                <img src="images/lingshou.png" alt="">
+                                <p>零售</p>
+                            </div>
+                            <div>
+                                <p style="text-align:center;line-height:70px;font-size: 34px;">...</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

@@ -1,0 +1,122 @@
+<div id="yyzj" class="clear">
+    <input class="leftLight" type="hidden" value="0" name="yyzjclass">
+
+    <div class="show" style="position: relative;">
+        <div class="clear">
+            <div ng-include src="'left.html'"></div>
+            <div class="show-word fl">
+                <div class="show-word-top">
+                    <h2><span>语音中继（30B＋D）</span></h2>
+                    <p>30B＋D业务是为营销中心、客服中心、集团办公等应用而提供的经济型集成规模线路（通常与呼叫中心系统结合使用），又称ISDN-PRI（ISDN Primary Rate
+                        Access，基群速率接入ISDN），有30个B通路和1个D通路，每个B通路和D通路均为64Kb/s，共1.920Kb/s。每一个PRI接口可以独立成为一个PRA用户群，也可以多个PRA
+                        接口组成一个用户群。30B＋D业务用于需要传输大量数据的应用，是提供数字交换机、LAN、主计算机和其他设备到网络连接的经济选择。</p>
+                </div>
+                <div class="show-word-down">
+                    <button ng-click="gotoPage('/denglu')">立即使用</button>
+                </div>
+            </div>
+            <div class="show-img fr">
+                <img src="images/yuyinzhongjipng.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div style="position: relative;">
+        <div class="main-content">
+            <div class="clear stitle">
+                <ul class="">
+                    <li><a href="" class="md" name="#a1s">业务概况</a></li>
+                    <li><a href="" class="md" name="#a2">设备与组网方案</a></li>
+                    <li><a href="" class="md" name="#a4">行业应用</a></li>
+                </ul>
+                <div class="clear ">
+                    <button ng-click="gotoPage('/denglu')">立即使用</button>
+                </div>
+            </div>
+            <script>
+                smallt.stitleH = $(".stitle").offset().top;//页面加载就取下固定值
+                smallt.left = parseInt($(".stitle").css("left"));
+            </script>
+            <div>
+                <div class="contents container-fluid  ctul-img">
+                    <div class="row clear">
+                        <a id="a1s"></a>
+                        <h3>业务概况<span class="fr"></span></h3>
+                        <p>30B＋D以ISDN为基础，ISDN即综合业务数字网（Integrated Services Digital
+                            Network），能够提供端到端的数字连接，用来支持包括话音和非话音在内的多种业务，是在现有电话网上开放的一种集语音、数据和图像通信为一体的综合业务。用户可根据业务的需要选择基本速率（30B＋D）和基群速率（30B＋D）业务。</p>
+                        <ul class="fl">
+                            <li>
+                                <h4>30B+D主要应用于：</h4>
+                                <p>数字程控交换（30个64Kb/s的B信道接入）。</p>
+                                <p>商业机构总部与各分支机构之间的信息接入直通道。</p>
+                                <p></p>
+                            </li>
+                            <li>
+                                <h4>30B＋D的功能</h4>
+                                <p>一条30B＋D，实现30路语音同时呼入呼出。</p>
+                                <p>用户可通过总机＋分机方式进行呼叫。</p>
+                                <p>给分机分配8位真实号码，外线用户可直接以8位号码拨叫分机，也可以拨打总机再转接分机。</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="contents container-fluid  ct6">
+
+                    <div class="row">
+                        <a id="a2"></a>
+                        <h3>设备与组网方案<span class="fr"></span></h3>
+                        <p>目前，30B＋D有两种实现方式，一种是光缆＋光端机接入方式，另一种是模拟线＋HDSL设备接入方式。 </p>
+                        <h4><b>光纤＋光端机接入方式 </b></h4>
+                        <div>
+                            <img src="images/yyzj1.jpg" alt="">
+                        </div>
+                        <h4><b>模拟线＋HDSL设备接入方式 </b></h4>
+                        <p>用户数据中心与私有云的高速通道，满足用户自建或托管数据中心与自建私有云或托管云互联。</p>
+                        <div>
+                            <img src="images/yyzj2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contents container-fluid ct1">
+                    <div class="row">
+                        <a id="a4"></a>
+                        <h3>行业应用<span class="fr"></span></h3>
+                        <div class="img-center clear" title="行业应用">
+                            <div>
+                                <img src="images/sydw.png" alt="">
+                                <p>企事业单位</p>
+                            </div>
+                            <div>
+                                <img src="images/game.png" alt="">
+                                <p>游戏</p>
+                            </div>
+                            <div>
+                                <img src="images/jinrong.png" alt="">
+                                <p>金融</p>
+                            </div>
+                            <div>
+                                <img src="images/syhz.png" alt="">
+                                <p>商业企业</p>
+                            </div>
+                            <div>
+                                <img src="images/lingshou.png" alt="">
+                                <p>零售</p>
+                            </div>
+                            <div>
+                                <p style="text-align:center;line-height:70px;font-size: 34px;">...</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+

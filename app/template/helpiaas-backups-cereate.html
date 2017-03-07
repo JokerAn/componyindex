@@ -1,0 +1,65 @@
+<div id="helpdocum">
+    <!-- 搜索块header-start-->
+    <div class="h_elp_wrap fl">
+        <div class="h_elp_had fl">
+            <div class="h_elp_had-inner">
+                <h2 class="title fl" style="margin-left: 514px;">
+                    <a href="javascript:;">帮助与文档</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索块header-end-->
+    <!-- 内容header-start-->
+    <div class="maincont fl">
+        <div class="warp">
+            <div class="grids-table">
+                <div class="grids-nav" ng-include="'helpLeft.html'"></div>
+                <div class="grids-details">
+                    <div class="grids-height">
+                        <p class="grids-crumbs">
+                            <a href="javascript:;">帮助与文档</a>
+                            <i class="r_png"></i>
+                            <a href="javascript:;"> IaaS备份与恢复指南</a>
+                            <i class="r_png"></i>
+                            <span> 步骤一：创建备份</span>
+                        </p>
+                        <h1 class="grids-height-title">
+                            步骤一：创建备份
+                        </h1>
+                        <div class="iaas_line">
+                            <p>
+                                你可以对一块或多块硬盘（包括系统盘和数据盘）创建备份，我们的备份功能有以下几点特性：
+                            </p>
+                            <p>
+                                基本备份：你可以对主机的系统盘进行备份，也可以对数据盘进行备份。
+                            </p>
+                            <p>
+                                在线备份：你可以对正在运行的主机进行备份，也可以对正在使用的数据盘进行备份。备份操作不会影响或者中断你业务的运行。
+                            </p>
+                            <p style="margin-top: 20px;">
+                                <img src="./images/backup1.png" alt="" style="width: 427px;">
+                            </p>
+                            <p style="margin-top: 20px;">
+                                <img src="./images/Host_backup1.png" alt="" style="width: 427px;">
+                            </p>
+                            <div style="margin-top:10px;">
+                                <p>
+                                    当你对正在运行的主机或者已经绑定的硬盘做在线备份时，需要注意以下几点：
+                                </p>
+                                <p>
+                                    备份只能捕获在备份任务开始时已经写入磁盘的数据，不包括当时位于缓存里的数据。
+                                    <br>
+                                    为了保证数据的完整性，你需要在创建备份前暂停所有文件的写操作，直到备份进入"捕获完成"的状态。或者先停止主机或解绑硬盘，进行离线备份。
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容header-send-->
+</div>

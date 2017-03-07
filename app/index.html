@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="an">
+<head>
+    <meta charset="UTF-8">
+    <title>龙腾佳讯</title>
+    <link rel="icon" href="images/iconlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <!--<link type="text/css" rel="stylesheet" href="js/sycss.css"/>-->
+
+
+    <link rel="stylesheet" href="css/h_elp.css">
+    <link rel="stylesheet" href="css/main.css">
+    <!--<script src="../j"></script>-->
+</head>
+
+<body ng-controller="allcontrol">
+<div class="zhezhaoceng" style="display: none;"></div>
+<div class="tousu3" style="display: none;">
+    <h2>产品咨询与投诉 <span class="fr tousuclose">×</span></h2>
+    <div>
+        <table>
+            <tbody>
+            <tr>
+                <td style="width:170px;">反馈类别</td>
+                <td class="fankui" style="width:410px;">
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="fankuileibie" value="1" name="a33">产品咨询
+                    </label>
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="fankuileibie" value="2" name="a33">需求建议
+                    </label>
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="fankuileibie" value="3" name="a33">投诉服务
+                    </label>
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="fankuileibie" value="4" name="a33">投诉产品
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>细分类型</td>
+                <form action="" class="form-group">
+                    <td class="xifen" ng-show="fankuileibie==1">
+
+                        <label>
+                            <input class="tc-15-radio ai" type="radio" value="1" name="af3">云产品
+                        </label>
+                        <label>
+                            <input class="tc-15-radio" type="radio" value="2" name="af3">解决方案
+                        </label>
+                    </td>
+                    <td class="xifen" ng-show="fankuileibie==2">
+                        <label>
+                            <input class="tc-15-radio ai" type="radio" value="1" name="af3">产品功能建议
+                        </label>
+                        <label>
+                            <input class="tc-15-radio" type="radio" value="2" name="af3">服务建议
+                        </label>
+
+                    </td>
+                    <td class="xifen" ng-show="fankuileibie==3">
+                        <label>
+                            <input class="tc-15-radio ai" type="radio" value="1" name="af3">服务态度
+                        </label>
+                        <label>
+                            <input class="tc-15-radio" type="radio" value="2" name="af3">问题未解决
+                        </label>
+                        <label>
+                            <input class="tc-15-radio" type="radio" value="3" name="af3">工单处理慢
+                        </label>
+                    </td>
+                    <td class="xifen" ng-show="fankuileibie==4">
+                        <label>
+                            <input class="tc-15-radio ai" type="radio" value="1" name="af3">产品故障
+                        </label>
+                        <label>
+                            <input class="tc-15-radio" type="radio" value="2" name="af3">产品功能
+                        </label>
+
+                    </td>
+                </form>
+            </tr>
+            <tr>
+                <td>反馈内容</td>
+                <td class="fankuicontent">
+                    <div class="fankuifile">
+                        <form action="" style="position: relative;">
+                            <a><i></i></a>
+                            <a class="afileimg"><i></i></a>
+                            <input class="  input-file" type="file" name="uploadfile"
+                                   accept="png, jpeg, jpg, txt, doc, docx, xls, xlsx">
+                            <input class="  input-img" type="file" name="uploadfile" accept="png, jpeg, jpg">
+                        </form>
+                    </div>
+                    <div class="fankuicontents">
+                        <div>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <p>上传附件支持jpg、png、txt、doc、xls格式，最大不超过5M</p>
+                    </div>
+
+                </td>
+            </tr>
+            <tr>
+                <td>联系手机</td>
+                <td>
+                    <form action="">
+                        <select name="">
+                            <option value="0">中国 +86</option>
+                            <option value="1">香港 +852</option>
+                            <option value="2">台湾 +886</option>
+                        </select>
+                        <input type="text">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>联系时间</td>
+                <td class="fankui lianxitime">
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="time918" ng-checked="true" value="1"
+                               name="a34">每日9:00 - 18:00
+                    </label>
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="timeall" value="2" name="a34">任何时间
+                    </label>
+                    <label>
+                        <input class="tc-15-radio" type="radio" ng-model="timenone" value="3" name="a34">从不接收
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <td>关联工单</td>
+                <td class="fankui lianxitime">
+                    <form action="">
+                        <input type="text">
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td>验证码</td>
+                <td class="fankui lianxitime">
+                    <div></div>
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <div style="text-align:left;">
+                        温馨提示：反馈会在1个工作日内与您联系（工作时间：周一至周五，9:00-18:00）。紧急问题建议您拨打4009-100-100或提交工单，谢谢！
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="goTop">
+    <ul>
+        <li class="iphoness">
+            <div></div>
+        </li>
+        <li class="weixin1">
+            <div></div>
+        </li>
+        <li class="tousu" style="display: none">
+            <div></div>
+        </li>
+        <li class="gtop" style="visibility: hidden;">
+            <div></div>
+        </li>
+    </ul>
+</div>
+<div class="goTop2">
+    <ul>
+        <li class="iphone2" style="display: none;border:1px solid #aaa">
+            <p>电话: 400-888-1360</p>
+        </li>
+        <li class="weixin2" style="display:none;border:1px solid #aaa;width:130px;height:150px;position: relative;
+    top: 125px;">
+            <img style="width:120px;height:120px;    margin: 5px 0 0 -1px;" src="images/longtel-weixin.jpg" alt="">
+            <h5>龙腾云微信公众号</h5>
+        </li>
+        <li class="tousu2" style="display: none;border:1px solid #aaa">
+            <p>产品投诉与咨询</p>
+        </li>
+    </ul>
+</div>
+<div class="index-nav-black0"></div>
+<nav class="clear">
+    <div   class="logoimsg fl">
+        <a href="#/index"><img src="images/index-logo.png" alt=""></a>
+    </div>
+    <ul>
+    <li class="yunchanpin" data-name=".a0">
+    <a href="javascript:;">云产品</a>
+    <div class="nav-down-aa a0">
+    <ul class="navLi" style="width:212px;margin:0 0 0 75px">
+    <li style="background:rgba(51,51,51,0.5);">
+    <a ng-click="gotoPage('/www')" href="">IaaS公有云 <b class="icon iconfont icon-more"></b> </a>
+    <div class="nav-one iaasg">
+    <ul>
+    <span>云计算</span>
+    <li ng-click="gotoPage('/jsy')"><a href="">云主机<p>随时获取、弹性可伸缩的计算服务</p></a></li>
+    <li ng-click="gotoPage('/image')"><a href="">镜像<p>操作系统及软件配置的模板</p></a></li>
+    </ul>
+    <ul>
+    <span>存储</span>
+    <li ng-click="gotoPage('/yyp')"><a href="">云硬盘<p>稳定安全， 可弹性伸缩的计算服务</p></a></li>
+    <li ng-click="gotoPage('/beifen')"><a href="">备份<p>用于在块及设备上进行备份及恢复</p></a></li>
+    </ul>
+    <ul>
+    <span>网络</span>
+    <li ng-click="gotoPage('/sywl')"><a href="">私有网络<p>帮您轻松创建逻辑隔离的私有网络</p></a></li>
+    </ul>
+    <ul>
+    <span>监控与管理</span>
+    <li ng-click="gotoPage('/jkgl')"><a href="">监控与管理<p>加强数据及资源的安全性</p></a></li>
+    </ul>
+
+    </div>
+    </li>
+    <li>
+    <a href="">IaaS私有云 <b class="icon iconfont icon-more"></b> </a>
+    <div class="nav-one iaass">
+    <ul>
+    <span>云接入</span>
+    <li ng-click="gotoPage('/yjr')"><a href="">云接入<p>帮助企业联接私有数据中心与公有云，实现混合云架构</p></a></li>
+    </ul>
+    <ul>
+    <span>托管云</span>
+    <li ng-click="gotoPage('/tgy')"><a href="">托管云<p>为企业提供按需、实时、具备弹性与自动化的 IT 交付能力</p></a>
+    </li>
+    </ul>
+    <ul>
+    <span>私有云</span>
+    <li ng-click="gotoPage('/syy')"><a href="">私有云<p>帮助企业联接私有数据中心与公有云，实现混合云架构</p></a></li>
+    </ul>
+    </div>
+    </li>
+    <li>
+    <a href="">CaaS电信云 <b class="icon iconfont icon-more"></b> </a>
+    <div class="nav-one caas">
+    <ul>
+    <span>互联网接入</span>
+    <li ng-click="gotoPage('/hlwjr')"><a href="">互联网接入<p>种类丰富的接入方式，高品质的线路资源</p></a></li>
+    </ul>
+    <ul>
+    <span>传输电路</span>
+    <li ng-click="gotoPage('/csdl')"><a href="">传输电路<p>为客户在同一城市内不同地点间提供高效的信息传送通路</p></a>
+    </li>
+    </ul>
+
+    <ul>
+    <span>语音中继</span>
+    <li ng-click="gotoPage('/yyzj')"><a href="">语音中继<p>
+    30B＋D业务是为营销中心、客服中心、集团办公等应用而提供的经济型集成规模线路</p></a></li>
+    </ul>
+    <ul>
+    <span>高速通道</span>
+    <li ng-click="gotoPage('/gstd')"><a href="">高速通道<p>
+    于在不同数据中心、云、以及办公网络之间实现高速、稳定、安全的私网通信</p></a></li>
+    </ul>
+
+    </div>
+    </li>
+    <li>
+    <a href="">SECaaS安全云 <b class="icon iconfont icon-more"></b> </a>
+    <div class="nav-one secaas">
+    <ul>
+    <span>上网行为管理</span>
+    <li ng-click="gotoPage('/swxwgl')"><a href="">上网行为管理<p>帮助互联网用户控制和管理对互联网的使用</p></a></li>
+    </ul>
+    <ul>
+    <span>智慧云网关</span>
+    <li ng-click="gotoPage('/zhy')"><a href="">智慧云网关<p>
+    一体化融合网络接入、管控、优化、审计、运营等功能的高性能综合应用云网关</p></a></li>
+    </ul>
+    <ul>
+    <span>抗D产品</span>
+    <li ng-click="gotoPage('/kangD')"><a href="">抗D产品<p>单个节点防御量高达1T按需扩容，无黑洞</p></a></li>
+    </ul>
+    </div>
+    </li>
+    <li>
+    <a href="">SaaS软件云 <b class="icon iconfont icon-more"></b> </a>
+    <div class="nav-one secaas">
+    <ul>
+    <span>云监控</span>
+    <li ng-click="gotoPage('/yjkproduct')"><a href="">云监控<p>提供高效、安全、易用的一站式IT海量敏捷运维管理平台</p>
+    </a></li>
+    </ul>
+    </div>
+    </li>
+    </ul>
+    </div>
+    </li>
+    <li class="a1" data-name="nav-down-aa">
+    <a href="javascript:;">解决方案</a>
+    <div class=" a1">
+
+    <div class="fl">
+    <p>通用解决方案</p>
+    <ul class="">
+    <li ng-click="gotoPage('/hhyjj')"><a href="">混合云</a></li>
+    <!--<li ng-click="gotoPage('/dsj')"><a href="">大数据</a></li>-->
+    <li ng-click="gotoPage('/idcjjfa')"><a href="">数据中心</a></li>
+    </ul>
+    </div>
+    <div class="fl ul-line">
+    <ul class=" ">
+    <p>行业解决方案</p>
+    <li ng-click="gotoPage('/jjfa')"><a href="">电商OTO</a></li>
+    <li ng-click="gotoPage('/lsjj')"><a href="">零售业</a></li>
+    <li ng-click="gotoPage('/callc')"><a href="">呼叫中心</a></li>
+    </ul>
+    </div>
+    </div>
+    </li>
+
+    <li class="a3" data-name="nav-down-aa">
+    <a href="javascript:;">文档与支持</a>
+    <div class=" a3">
+    <div class="fl">
+    <p>推广与合作</p>
+    <ul class="" style="cursor: pointer">
+    <li ng-click="gotoPage('/qudaohz')"><a>推广合作</a></li>
+    <li ng-click="gotoPage('/qudaohz')"><a>渠道伙伴</a></li>
+    </ul>
+
+    </div>
+
+    <div class="fl ul-line">
+    <p>文档</p>
+    <ul class="">
+    <li ng-click="gotoPage('/helpiaas-serve')"><a href="">产品文档</a></li>
+    <li ng-click="gotoPage('/helpiaas-serve')"><a href="">快速入门</a></li>
+    <li ng-click="gotoPage('/helpissue')"><a href="">FAQ</a></li>
+    </ul>
+    </div>
+    </div>
+    </li>
+    <li class="a4" data-name="nav-down-aa">
+    <a href="javascript:;">关于龙腾云</a>
+    <div class=" a4">
+    <div class="fl">
+    <p>龙腾云</p>
+    <ul class=" ">
+    <li ng-click="gotoPage('/news')"><a href="">新闻动态</a></li>
+    <li ng-click="gotoPage('/helpiaas-backups-fwtk')"><a href="">服务条款</a></li>
+    </ul>
+    </div>
+    <div class="fl ul-line">
+    <p>云计算</p>
+    <ul class=" ">
+    <li ng-click="gotoPage('/helpiaas-backups-lxwm')"><a href="">联系我们</a></li>
+    <li ng-click="gotoPage('/helpiaas-backups-gywm')"><a href="">关于我们</a></li>
+    </ul>
+    </div>
+    </div>
+    </li>
+
+    </ul>
+    <div class="fr">
+        <i class="icon iconfont" style="position: relative;display:none;
+        top: 3px;cursor: pointer">&#xe6ac;</i>
+        <a href="">免费体验</a>
+        <span>|</span>
+
+        <a ng-click="gotoPage('/beian')" href="">备案</a>
+        <span>|</span>
+        <a id="dlwenzi" ng-click="gotoPage('/denglu')">登录</a>
+        <div id="meidenglu" style="display: inline-block">
+            <!--<a  href="/register">注册有礼</a> &lt;!&ndash;ng-click="gotoPage('/zhuce')"&ndash;&gt;-->
+            <a ng-click="gotoPage('/denglu')" class="btn" href="">用户中心</a>
+        </div>
+        <div id="denglule" style="display: none;">
+            <!--<a href="/overview" class="huiyuanming btn"></a>-->
+            <a href="javascript:logout();" class="btn" href="">退出</a>
+        </div>
+
+
+    </div>
+</nav>
+<div id="a1" ng-view>
+
+</div>
+
+<footer class="footer">
+<div class="index-c" style="padding-top: 50px;">
+<ul class="clear">
+<li>
+<h4>云产品</h4>
+<ul>
+<li ng-click="gotoPage('/jsy')"><a href="">云主机</a></li>
+<li ng-click="gotoPage('/syy')"><a href="">私有云</a></li>
+<li ng-click="gotoPage('/gstd')"><a href="">高速通道</a></li>
+<li ng-click="gotoPage('/zhy')"><a href="">智慧云网关</a></li>
+<li ng-click="gotoPage('/yjkproduct')"><a href="">云监控</a></li>
+<!-- <li ng-click="gotoPage('/image')"><a href="">镜像</a></li>
+<li ng-click="gotoPage('/yyp')"><a href="">云硬盘<p></a></li>
+<li ng-click="gotoPage('/beifen')"><a href="">备份</a></li>-->
+</ul>
+</li>
+<li>
+<h4>解决方案</h4>
+<ul>
+<li ng-click="gotoPage('/lsjj')"><a href="">零售</a></li>
+<li ng-click="gotoPage('/hhy')"><a href="">混合云</a></li>
+<li ng-click="gotoPage('/jjfa')"><a href="">电商OTO</a></li>
+<li ng-click="gotoPage('/callc')"><a href="">呼叫中心</a></li>
+<li ng-click="gotoPage('/idcjjfa')"><a href="">数据中心</a></li>
+</ul>
+</li>
+<li>
+<h4>文档与支持</h4>
+<ul>
+<li ng-click="gotoPage('/helpiaas-serve')"><a href="">产品文档</a></li>
+<li ng-click="gotoPage('/helpiaas-serve')"><a href="">快速入门</a></li>
+<li ng-click="gotoPage('/qudaohz')"><a href="">推广合作</a></li>
+<li ng-click="gotoPage('/qudaohz')"><a href="">渠道伙伴</a></li>
+</ul>
+</li>
+<li>
+<h4>关于龙腾云</h4>
+<ul>
+<li ng-click="gotoPage('/helpiaas-backups-gywm')"><a href="">关于我们</a></li>
+<li ng-click="gotoPage('/helpiaas-backups-lxwm')"><a href="">联系我们</a></li>
+<li ng-click="gotoPage('/news')"><a href="">新闻动态</a></li>
+<li ng-click="gotoPage('/helpiaas-backups-fwtk')"><a href="">服务条款</a></li>
+</ul>
+</li>
+</ul>
+<div id="weixinimg" class="clear">
+<p>北京龙腾佳讯科技股份公司</p>
+<p>400-888-1360</p>
+<p><img style="  width: 40%;" src="images/longtel-weixin.jpg"></p>
+</div>
+<p style="text-align: center;margin: 210px 0 0 0">
+京ICP备14055286号-1
+&nbsp; 京公网安备（运营商备案号）11010502026560
+</p>
+</div>
+
+</footer>
+</body>
+
+<script src="longtelwebjs/jquery-1.12.4.js"></script>
+<script src="longtelwebjs/angular.js"></script>
+<script src="longtelwebjs/angular-route.js"></script>
+<script src="longtelwebjs/angu.js"></script>
+
+<script src="longtelwebjs/main.js"></script>
+</html>
