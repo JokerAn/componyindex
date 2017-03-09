@@ -1,0 +1,239 @@
+<div id="yyp" class="clear">
+    <input class="leftLight" type="hidden" value="0" name="yypclass">
+
+    <div class="show" style="position: relative;">
+        <div class="clear">
+            <div ng-include src="'left.html'"></div>
+            <div class="show-word fl">
+                <div class="show-word-top">
+                    <h2><span>云硬盘</span></h2>
+                    <p>云硬盘 是龙腾云提供的用于TelCloudHost实例的持久性数据块级存储。每个云硬盘在其可用区内自动复制，云硬盘中的数据在可用区内以多副本冗余方式存储，避免数据的单点故障风险。云硬盘为您提供处理工作所需的稳定可靠低延迟存储，通过云硬盘，您可在几分钟内调整存储容量，且所有这些您只需为配置的资源量支付低廉的价格。</p>
+                </div>
+                <div class="show-word-down">
+                    <button ng-click="gotoPage('/denglu')">立即使用</button>
+                    <!--<button>价格计算</button>-->
+                </div>
+            </div>
+            <div class="show-img fr">
+                <img src="images/yunyingpan.png" alt="">
+            </div>
+        </div>
+
+    </div>
+    <div style="position: relative;">
+        <div class="main-content">
+            <div class="clear stitle">
+                <ul class="">
+                    <li><a href="" class="md" name="#a1s">产品优势</a></li>
+                    <li><a href="" class="md" name="#a2">产品功能</a></li>
+                    <li><a href="" class="md" name="#a3">应用场景</a></li>
+                    <li><a href="" class="md" name="#a5">行业应用</a></li>
+
+                </ul>
+                <div class="clear ">
+                    <button ng-click="gotoPage('/denglu')">立即使用</button>
+                    <!--<button>价格计算</button>-->
+                </div>
+            </div>
+            <script>
+                smallt.stitleH = $(".stitle").offset().top;//页面加载就取下固定值
+                smallt.left = parseInt($(".stitle").css("left"));
+            </script>
+            <div>
+
+                <div class="contents container-fluid  ct3">
+
+                    <h3>产品对比<span class="fr"></span></h3>
+                    <div>
+                        <div class="row"><a id="a1s"></a>
+                            <table class="col-md-12">
+                                <tbody>
+                                <tr>
+                                    <td class="col-md-2"><h4>优势点</h4></td>
+                                    <td class="col-md-6" style="position: relative">
+                                        <div class="tablediv1"></div>
+                                        <h4>云硬盘</h4>
+                                    </td>
+                                    <td>传统SAN存储</td>
+                                </tr>
+                                <tr>
+                                    <td class=" ">
+                                        <p>弹性扩展</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            每块硬盘空间大小从1GB到2TB，单台云主机上即可挂载多块云硬盘，从而可以使其空间容量最大扩展到几十TB。更可快速创建和加载，并具备扩容功能，可随时扩展到更大容量。</p>
+                                    </td>
+                                    <td>
+                                        <p>受限存储硬件容量、IDC机架位限制，升级硬件周期长，影响业务服务</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p>数据高可用</p>
+                                    </td>
+                                    <td>
+                                        <p>每份云硬盘数据在后台都存有多份冗余，并实时同步，保证不受单机故障的影响。</p>
+                                    </td>
+                                    <td>
+                                        <p>人工管理硬盘/存储池/LUN/目标器/启动器/CHAP等众多概念的资源，业务使用块存储操作复杂且易出错；需专业运维人员操作，成本较高</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p>独立持久化</p>
+                                    </td>
+                                    <td>
+                                        <p>云硬盘可以挂载到任意一台云主机上，两者拥有不同的生命周期，当该台云主机被删除时，云硬盘数据仍然存在，并可以挂载到其它的云主机上进行访问。</p>
+                                    </td>
+                                    <td>
+                                        <p>
+                                            传统的本地的RAID方案、本地阵列冗余机制，存在数据单点问题，一旦丢失不可回溯；EMC、IBM厂商提供的数据冗余方案，需要购买极其昂贵的物理设备，后续维护运营成本高</p>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="">
+                                        <p>备份和恢复</p>
+                                    </td>
+                                    <td style="position: relative;">
+                                        <p>用户可以对数据进行快照备份并存放，随时按快照点进行数据恢复。</p>
+                                        <div class="tablediv2"></div>
+                                    </td>
+                                    <td>
+                                        <p>受限存储硬件容量、IDC机架位限制，升级硬件周期长，影响业务服务</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="contents ct4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <a id="a2"></a>
+                            <h3>产品功能</h3>
+                            <div class="neirong clear">
+                                <ul class="clear neirong-title">
+                                    <li style="background:#fff" class="col-md-2"><a style="color:#2277e6;"
+                                                                                    href="javascript:;">数据备份</a></li>
+                                    <li class="col-md-3"><a href="javascript:;">跨机房存储</a></li>
+                                    <li class="col-md-2"><a href="javascript:;">弹性挂载</a></li>
+                                    <li class="col-md-3"><a href="javascript:;">初始化加速</a></li>
+                                    <li class="col-md-2"><a href="javascript:;">磁盘快照</a></li>
+
+                                </ul>
+                                <div class="neirong-content nr0 col-md-12">
+                                    <p>
+                                        快照是对云硬盘的完全拷贝，该拷贝包括磁盘在拷贝开始的时间点的映像，并以冗余的方式存储在多个可用区。您可以使用快照来应对业务数据误操作、被攻击、被篡改等场景。</p>
+                                    <p>龙腾云硬盘选用CoW（Copy on
+                                        Write）的方式制作快照，您无需担忧在制作快照时因为硬盘性能下降而业务中断。同时，我们提供定时器功能，您可以根据业务特点设置定时器进行自动备份，以定期为您块存储上的业务数据做备份。如果您发现因误操作、被攻击或被篡改等导致数据丢失或不一致，可以对快照做回滚操作，帮助您将业务恢复到快照时间点的业务状态。</p>
+                                </div>
+                                <div class="neirong-content nr1 col-md-12" style="display: none;">
+                                    <p>
+                                        龙腾云考虑了跨资源池容灾的问题，云硬盘系统与快照系统相互独立，部署于不同机房，且外网不可访问，隔绝黑客攻击。在同一个机房内，云硬盘及快照的数据将跨机架存储，避免了同一个机架由于掉电、风冷故障等中断业务。</p>
+                                    <p>当龙腾云硬盘系统的多份数据冗余丢失时（机房级故障、自然灾害等），您可从快照系统恢复数据。</p>
+                                </div>
+                                <div class="neirong-content nr2 col-md-12" style="display: none;">
+                                    <p>
+                                        龙腾云硬盘可在区域内自由挂载、卸载，无需关闭或重启服务器；龙腾云硬盘的容量可弹性配置，您可按需升级容量；单台虚拟机最多可挂载10块云盘，容量达40TB。您可以轻松搭建大容量的文件系统，用于大数据、数据仓库、日志处理等业务。</p>
+                                </div>
+                                <div class="neirong-content nr3 col-md-12" style="display: none;">
+                                    <p>
+                                        使用快照回滚创建虚拟机，虚拟机的创建、初始化速度能提升50%，做到分钟级别。您可快速复制一个或多个与现有云服务器相同配置的云服务器，服务器上的服务也将自动复制到新服务器上，由此实现业务的快速批量部署。</p>
+                                </div>
+                                <div class="neirong-content nr4 col-md-12" style="display: none;">
+                                    <p>
+                                        龙腾云云硬盘控制台提供使用快照创建弹性云盘的功能，您可以通过加载快照文件快速克隆磁盘，帮您实现快速批量业务部署或业务迁移。游戏客户可使用快照创建弹性云盘的能力，快速部署几十个大区，满足公测首日开服需求，更是大大节省运维人力</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="contents ct4">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <a id="a3"></a>
+                            <h3>应用场景</h3>
+                            <div class="neirong clear">
+                                <ul class="clear neirong-title">
+                                    <li style="background:#fff" class="col-md-4"><a style="color:#2277e6;"
+                                                                                    href="javascript:;">避免单点故障</a></li>
+                                    <li class="col-md-4"><a href="javascript:;">支持海量数据分析</a></li>
+                                    <li class="col-md-4"><a href="javascript:;">支持核心SQL</a></li>
+
+                                </ul>
+                                <div class="neirong-content nr0 col-md-12">
+                                    <p>传统存储的硬件故障，会导致核心业务中断数十小时。龙腾云硬盘高效支持虚拟机热迁移，您可在原物理服务器故障前提前热迁移，避免物理故障造成业务中断。</p>
+                                    <p>龙腾云云硬盘还提供三份数据冗余，具备完善的数据备份、快照、数据秒级恢复能力，规避了核心数据丢失的风险。</p>
+                                </div>
+                                <div class="neirong-content nr1 col-md-12" style="display: none;">
+                                    <p>
+                                        高性能型云硬盘多线程访问能力优秀，高效支持Hadoop-Mapreduce和HDFS。高效应对TB/PB级数据的离线处理，广泛应用于数据分析、挖掘、商业智能等领域。</p>
+                                    <ul>
+                                        <li>测试环境：12Core 40GB RAM 服务器5台，各挂载1TB 高性能型硬盘、1TB 容量性硬盘</li>
+                                        <li>部署：Spark/zookeeper/HDFS</li>
+                                        <li>测试结果：模拟离线数据分析，1.5TB数据，5块容量性硬盘提供500MB/s的读取速度， 50分钟读取到内存。使用高性能型硬盘，可在25分钟完成！</li>
+                                    </ul>
+                                </div>
+                                <div class="neirong-content nr2 col-md-12" style="display: none;">
+                                    <p>龙腾云高性能型云硬盘，基于全SSD存储介质、龙腾云硬盘分布式架构，实现了超强性能与超高可靠性的集合，轻松支撑业务侧高吞吐量的DB请求。</p>
+                                    <ul>
+                                        <li>联机事务处理：mysql压力测试</li>
+                                        <li>测试环境：4 Core 8GB RAM虚拟机，挂载800G 高性能型硬盘</li>
+                                        <li>部署：Mysql version 5.5.42</li>
+                                        <li>
+                                            测试结果：用sysbench模拟OLTP性能测试，测试集为1千万条记录，TPS可达1616、QPS达29000，单盘足以支撑每秒上万人的在线同时交易！
+                                        </li>
+                                    </ul>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="contents container-fluid ct1">
+                    <div class="row">
+                        <a id="a5"></a>
+                        <h3>行业应用<span class="fr"></span></h3>
+                        <div class="img-center clear" title="行业应用">
+                            <div>
+                                <img src="images/sydw.png" alt="">
+                                <p>企事业单位</p>
+                            </div>
+                            <div>
+                                <img src="images/game.png" alt="">
+                                <p>游戏</p>
+                            </div>
+                            <div>
+                                <img src="images/jinrong.png" alt="">
+                                <p>金融</p>
+                            </div>
+                            <div>
+                                <img src="images/syhz.png" alt="">
+                                <p>商业企业</p>
+                            </div>
+                            <div>
+                                <img src="images/lingshou.png" alt="">
+                                <p>零售</p>
+                            </div>
+                            <div>
+                                <p style="text-align:center;line-height:70px;font-size: 34px;">...</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
