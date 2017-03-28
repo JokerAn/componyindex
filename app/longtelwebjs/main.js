@@ -3,32 +3,7 @@
  */
 var a = 1;
 var timer = null, timer2 = null;
-function shifudenglu() {
 
-    $.ajax({
-        type: 'post',
-        async: true,
-        url: "jsonuser!getUserName",
-        data: {},
-        dataType: 'json',
-    }).success(function (data) {
-        // console.log(data);
-        if (data == "") {
-            $("#meidenglu").css({"display": "inline-block"});
-            $("#denglule").css({"display": "none"});
-            $("#dlwenzi").css({"display": "inline-block"});
-        } else {
-            $("#meidenglu").css({"display": "none"});
-            $("#denglule").css({"display": "inline-block"});
-            $(".huiyuanming").html(data);
-            $("#dlwenzi").css({"display": "none"});
-            // alert( $("#dlwenzi").css("display"))
-
-
-        }
-    })
-};
-shifudenglu();
 
 
 $("nav>ul>li").mouseenter(
