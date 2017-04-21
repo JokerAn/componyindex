@@ -1,0 +1,27 @@
+{
+  "name": "longtel",
+  "description": "",
+  "main": "gulpfile.js",
+  "authors": [
+    "JokerAn <divfooter@163.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/JokerAn/longtel",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular-route": "^1.6.4",
+    "angular": "^1.6.4",
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "vue": "^2.2.6"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  }
+}
