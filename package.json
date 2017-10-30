@@ -1,5 +1,5 @@
 {
-  "name": "longtel",
+  "name": "xxx",
   "version": "1.0.0",
   "description": "",
   "main": "gulpfile.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/JokerAn/longtel.git"
+    "url": "git+https://github.com/JokerAn/xxx.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/JokerAn/longtel/issues"
+    "url": "https://github.com/JokerAn/xxx/issues"
   },
-  "homepage": "https://github.com/JokerAn/longtel#readme",
+  "homepage": "https://github.com/JokerAn/xxx#readme",
   "devDependencies": {
     "browser-sync": "^2.18.8",
     "gulp": "^3.9.1",

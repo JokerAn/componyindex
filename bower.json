@@ -1,12 +1,12 @@
 {
-  "name": "longtel",
+  "name": "xxx",
   "description": "",
   "main": "gulpfile.js",
   "authors": [
     "JokerAn <divfooter@163.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/JokerAn/longtel",
+  "homepage": "https://github.com/JokerAn/xxx",
   "ignore": [
     "**/.*",
     "node_modules",

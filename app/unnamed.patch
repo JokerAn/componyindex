@@ -20,7 +20,7 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 -                    <!--<img src="images/lun3.png" alt="">-->
                  </div>
                  <div class="lunbo-inner lunbo-inner-10">
--                    <!-- <h1>零网费，使用龙腾云</h1>
+-                    <!-- <h1>零网费，使用xxxxx云</h1>
 -                     <h4>
 -                         即刻加入，四种优惠政策，供您选择。
 -                         <br>
@@ -120,7 +120,7 @@ Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
 -                    <!--<img src="images/lun4.png" alt="">-->
                  </div>
                  <div class="lunbo-inner lunbo-inner-8">
--                    <!--  <h1>龙腾佳讯成功挂牌新三板</h1>
+-                    <!--  <h1>xxxxx成功挂牌新三板</h1>
 -                      <h4>股票代码：839433</h4>-->
                      <a ng-click="gotoPage('/caas/internetaccess')" href=""><i class="icon iconfont"></i>了解详情</a>
                  </div>

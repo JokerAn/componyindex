@@ -1101,7 +1101,7 @@ app.controller("priceControl", function ($scope,$rootScope,$timeout) {
 
 
     // $scope.anurl="http://192.168.78.117:20000/console/api/";//接口前面统一的格式／／测试环境
-    // $scope.anurl="http://www.longtel.com/console/api/";//接口前面统一的格式／／测试环境
+    // $scope.anurl="http://www.xxx.com/console/api/";//接口前面统一的格式／／测试环境
 
 
     $scope.kind;//所有选区（北京1，北京2）
