@@ -1,2 +1,4 @@
-# longtel
-an
+#### npm install
+#### npm install -f
+#### gulp watch
+
