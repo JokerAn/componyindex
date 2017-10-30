@@ -1,0 +1,33 @@
+<html>
+<head>
+	<script type="text/javascript">
+		function rewriteURL(url) {
+			var urlFragment = url.split('/');
+			urlFragment[3] = '#';
+			var forwardURL = '';
+			for(var i = 0; i < urlFragment.length; i++) {
+				forwardURL = forwardURL + urlFragment[i] + '/';
+			}
+			forwardURL.substring(0, forwardURL.length - 1);
+			return forwardURL;
+		}
+		function rewriteURL2(url) {
+			var urlFragment = url.split('/');
+			urlFragment.push(urlFragment[3].split('forward')[1]);
+			urlFragment[3] = 'index.html#';
+			var forwardURL = '';
+			for(var i = 0; i < urlFragment.length; i++) {
+				forwardURL = forwardURL + urlFragment[i] + '/';
+			}
+			return forwardURL.substring(0, forwardURL.length - 1);;
+		}
+		// alert(rewriteURL(location.href));
+		location.href = rewriteURL2(location.href);
+		//http://192.168.60.166/index.html#/image
+		//测试地址 http://192.168.60.166/forwardimage
+		//应返回地址 http://192.168.60.166/index.html#/image
+	</script>
+</head>
+<body>
+</body>
+</html>

@@ -1,0 +1,379 @@
+body {
+	display: block
+}
+
+.home-wrap {
+	width: 125.6rem;
+	padding: 1.6rem 3.2rem;
+	margin: 0 auto;
+	color: #333
+}
+
+.grey-line {
+	border-bottom: 0.1rem solid #d4d4d4
+}
+
+.yellow {
+	color: #f2ae43
+}
+
+.ellips {
+	display: block;
+	vertical-align: middle;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis
+}
+
+.font-lg {
+	font-size: 2.4rem
+}
+
+.home-top {
+	height: 10rem
+}
+
+.home-user {
+	width: 50%
+}
+
+.user-part {
+	position: relative;
+	top: 1rem;
+	float: left;
+	width: 25rem;
+	border-right: 0.1rem solid #d4d4d4;
+	padding-right: 3.2rem;
+	height: 6.9rem
+}
+
+.user-part .home-name {
+	font-size: 2.4rem;
+	padding-bottom: 2.4rem
+}
+
+.user-part .home-email {
+	font-size: 1.4rem
+}
+
+.user-pay {
+	float: left;
+	padding-left: 3.2rem;
+	color: #333
+}
+
+.home-btn-wrap {
+	padding-top: 1.6rem
+}
+
+.home-btn-wrap a {
+	width: 8rem;
+	height: 3.5rem;
+	line-height: 3.5rem
+}
+
+.home-user-part {
+	width: 40rem;
+	float: right
+}
+
+.home-user-part .home-notice {
+	font-size: 1.8rem;
+	color: #333;
+	line-height: 2.8rem;
+	max-width: 29rem
+}
+
+.home-user-part p {
+	width: 40rem;
+	position: relative;
+	color: #898989
+}
+
+.home-user-part p .home-notice-com {
+	font-size: 1.4rem;
+	color: #898989;
+	line-height: 2.4rem;
+	max-width: 29rem
+}
+
+.home-user-part p .time-show {
+	position: absolute;
+	right: 0;
+	top: 0;
+	font-size: 1.2rem;
+	line-height: 2.4rem
+}
+
+.c-btn-white:hover {
+	background: #ff7f00
+}
+
+.card-body {
+	margin-right: -2.8rem
+}
+
+.home-net {
+	position: relative;
+	color: #333;
+	font-size: 1.8rem;
+	padding: 1.6rem 0;
+	margin-bottom: 2.4rem
+}
+
+.home-net label {
+	position: absolute;
+	top: 1.8rem;
+	background: #efefef;
+	padding-right: 1rem
+}
+
+.card-wrapper {
+	margin-right: -2.8rem;
+	height: 20.2rem
+}
+
+.pad-botm {
+	padding: 0 0 8rem
+}
+
+.home-net-card {
+	position: relative;
+	margin-right: 2.8rem
+}
+
+.home-net-card .card-item {
+	position: relative;
+	float: left;
+	width: 15.4rem;
+	height: 15rem;
+	padding: 1.6rem;
+	margin-right: 2.8rem;
+	margin-bottom: 1.6rem;
+	color: #4f4f4f
+}
+
+.border-blue {
+	background: #fff;
+	border-bottom: 0.4rem solid #148cec
+}
+
+.border-blue:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #81c6fd;
+	border-bottom: 0.4rem solid #148cec
+}
+
+.border-yellow {
+	background: #fff;
+	border-bottom: 0.4rem solid #ffba34
+}
+
+.border-black:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #000;
+	border-bottom: 0.4rem solid #000
+}
+
+.border-yellow:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #ffc045;
+	border-bottom: 0.4rem solid #ffba34
+}
+
+.border-dark-blue {
+	background: #fff;
+	border-bottom: 0.4rem solid #002471
+}
+
+.border-dark-blue:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #002060
+}
+
+.border-red {
+	background: #fff;
+	border-bottom: 0.4rem solid red
+}
+
+.border-red:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #cd5c5c;
+	border-bottom: 0.4rem solid red
+}
+
+.border-green {
+	background: #fff;
+	border-bottom: 0.4rem solid #34bf75
+}
+
+.border-green:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #46e490;
+	border-bottom: 0.4rem solid #34bf75
+}
+
+.border-pink {
+	background: #fff;
+	border-bottom: 0.4rem solid #6939b0
+}
+
+.border-pink:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #b27eff;
+	border-bottom: 0.4rem solid #6939b0
+}
+
+.border-yellow2 {
+	background: #fff;
+	border-bottom: 0.4rem solid #ff9518
+}
+
+.border-yellow2:hover {
+	box-shadow: 0 0 0.3rem 0.1rem #ffa944;
+	border-bottom: 0.4rem solid #ff9518
+}
+
+.home-icon {
+	width: 4rem;
+	height: 4rem;
+	position: absolute;
+	left: 1.6rem;
+	top: 1.6rem
+}
+
+.home-icon-vm {
+	background: url(../images/sprite_icon.16fd29.png) -16rem -17.1rem
+		no-repeat
+}
+
+.home-icon-duank{background: url(../images/sprite_icon.16fd29.png) -0.5rem -17.9rem
+		no-repeat}
+.home-icon-duand{background: url(../images/sprite_icon.16fd29.png) -0.5rem -22.2rem
+		no-repeat}
+.home-icon-liu{background: url(../images/sprite_icon.16fd29.png) -0.5rem -26.5rem
+		no-repeat}
+.home-icon-snapshot {
+	background: url(../images/sprite_icon.16fd29.png) -26rem -20.5rem
+		no-repeat
+}
+
+.home-icon-ebs {
+	background: url(/resources/console/i/sprite_icon.16fd29.png) -26rem
+		-15.5rem no-repeat
+}
+
+.home-icon-firewall {
+	background: url(../images/sprite_icon.16fd29.png) -26rem -10.5rem
+		no-repeat
+}
+
+.home-icon-eip {
+	background: url(../images/sprite_icon.16fd29.png) -10.1rem -17.9rem
+		no-repeat
+}
+
+.home-icon-eeip {
+	background: url(../images/sprite_icon.16fd29.png) -26rem -15.5rem
+		no-repeat
+}
+
+.home-icon-lbs {
+	background: url(../images/sprite_icon.16fd29.png) -21rem -20.5rem
+		no-repeat
+}
+
+.home-icon-vpc {
+	background: url(../images/sprite_icon.16fd29.png) -5.3rem -17.9rem no-repeat
+}
+
+.home-icon7 {
+	background: url(../images/sprite_icon.16fd29.png) -0.5rem -17.9rem no-repeat
+}
+
+.home-icon8 {
+	background: url(../images/sprite_icon.16fd29.png) -10.5rem -17.6rem
+		no-repeat
+}
+
+.home-icon9 {
+	background: url(../images/sprite_icon.16fd29.png) -25.5rem -5.5rem no-repeat
+}
+
+.home-icon10 {
+	background: url(../images/sprite_icon.16fd29.png) -25.5rem -0.5rem no-repeat
+}
+
+.home-icon11 {
+	background: url(/resources/console/i/sprite_icon.16fd29.png) -21rem
+		-15.5rem no-repeat
+}
+
+.home-icon12 {
+	background: url(/resources/console/i/sprite_icon.16fd29.png) -21rem
+		-10.5rem no-repeat
+}
+
+.home-icon13 {
+	background: url(/resources/console/i/sprite_icon.16fd29.png) -30.5rem -0.5rem
+		no-repeat
+}
+
+.home-icon14 {
+	background: url(/resources/console/i/sprite_icon.16fd29.png) -20.5rem
+		-5.5rem no-repeat
+}
+
+.home-icon15 {
+	background: url(../images/sprite_icon.16fd29.png) -20.5rem -0.5rem no-repeat
+}
+
+.cloud-live {
+	background: url(../images/sprite_icon.16fd29.png) -16rem -12.1rem
+		no-repeat
+}
+
+.home-card-title {
+	display: block;
+	text-align: right;
+	color: #4f4f4f;
+	line-height: 4rem;
+	padding-bottom: 2rem
+}
+
+.home-card-coment {
+	display: block;
+	padding-bottom: 0.5rem;
+	font-size: 1.2rem;
+	height: 2.6rem;
+	line-height: 2.6rem;
+	color: #4f4f4f
+}
+
+a.home-card-coment:hover {
+	color: #5fafe4
+}
+
+.color-red {
+	color: #e52c2c
+}
+
+.mar-r {
+	margin-right: 2.4rem
+}
+
+.ui-loading {
+	position: absolute;
+	width: 2rem;
+	height: 2rem;
+	left: 50%;
+	top: 50%;
+	margin-top: -1rem;
+	margin-left: -1rem
+}
+
+.region-name, .region-wrapper {
+	display: block;
+	overflow: hidden
+}
+
+.mfa-enter, .mfa-quit {
+	display: inline-block;
+	margin-top: 0.5rem;
+	height: 2rem;
+	line-height: 1.2rem;
+	width: 11rem
+}

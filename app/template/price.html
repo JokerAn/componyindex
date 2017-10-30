@@ -1,0 +1,286 @@
+<div id="price" class="clear">
+    <div class="img-titleshow">
+        <h1>价格计算器</h1>
+
+        <p>您可根据自身需求，选择最适合的产品组合，使用价格计算器估算成本</p>
+    </div>
+
+    <div class="price-content clear">
+        <div class="price-left fl clear">
+            <!--<p>云服务器单价最高直降8.7%，包年包月预付费6个月及以上88折，1年83折，2年7折，3年5折。</p>-->
+            <div class="price-left-content">
+                <h2>云服务器
+                    <!--<a href="javascript:;">&nbsp; 产品详情</a>-->
+                    <!--<a href="javascript:;">价格总览 | </a>-->
+                </h2>
+                <div class="clear price-lol-content">
+
+
+
+                    <div class="diyu">
+                        <p class="price-small-title">可用域 </p>
+
+                        <div class="diyu">
+
+                            <div class="btn-group next1">
+                                <button  type="button" class="btn btn-default selected" >服务域</button>
+                                <button type="button" class="btn btn-default " disabled>资源域</button>
+                            </div>
+                            <div class="keyongqu" style="display:block">
+                                <div class="next2" style="display: block">
+                                    <p class="price-small-title">可用区 </p>
+                                    <div class="btn-group bejing1">
+                                        <button type="button" class="btn btn-default "  ng-repeat="o in kind" >
+                                            {{o.kind}} <span style="display: none">{{o.positionId}}</span>
+                                        </button>
+                                    </div>
+
+                                </div>
+
+                                <div class="next2">
+                                    <p class="price-small-title">可用区 </p>
+                                    <div class="btn-group">
+                                        <button type="button" class="btn btn-default">上海1</button>
+                                        <button type="button" class="btn btn-default">上海2</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slice"></div>
+
+                    <div class="jfms">
+                        <p class="price-small-title">计费模式 </p>
+
+                        <div class="btn-group next1">
+                            <button type="button" class="btn btn-default selected">按量计费</button>
+                            <button type="button" class="btn btn-default">包年包月</button>
+
+                        </div>
+                        <div>
+
+                            <div class="anliangjifei next2" style="display: block">
+                                <div class="btn-group">
+                                    <button disabled type="button" class="btn btn-default jianfa"ng-click="jianfa()">-</button>
+                                    <input  readonly type="text" class="btn btn-default" ng-model="jftime">
+                                    <button disabled type="button" class="btn btn-default" ng-click="jiafa()">+</button>
+                                </div>
+                                <select name="" id="" class="btn btn-default" disabled>
+                                    <option value="1" selected>小时</option>
+                                    <option value="2">分钟</option>
+                                    <option value="3">秒</option>
+                                </select>
+                            </div>
+
+                            <div class="bnby next2">
+                                <div class="btn-group">
+                                    <button type="button" class="btn btn-default">1<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">2<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">3<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">4<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">5<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">6<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">7<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">8<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">9<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">10<span class="yuefenshow">个月</span></button>
+                                    <button type="button" class="btn btn-default">
+                                        11<span class="yuefenshow">个月</span><em>88折</em>
+                                    </button>
+                                    <button type="button" class="btn btn-default">
+                                        1年 <em>5折</em>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slice"></div>
+
+
+                    <div class="price-yzj">
+                        <p class="price-small-title">云主机 </p>
+                        <div class="btn-group xitongleixing" >
+                            <button  type="button" data-xitongnum="{{o.key}}" data-id={{$index+1}} class="btn btn-default" ng-repeat="o in xitong">{{o}}</button>
+                        </div>
+                        <!--<div class="btn-group heshu clear">-->
+                        <!--<button type="button" class="btn btn-default " data-cpu="{{o.first}}" data-second="{{o.second}}" ng-repeat="o in heshu">{{o.unitname}}</button>-->
+                        <!--</div>-->
+
+                        <div>
+                            <div class=" next1 btn-group heshu clear" style="display: block">
+                                <button type="button" class="btn btn-default " data-cpu="{{o.first}}" ng-repeat="o in heshuitem|unique:'first'">{{o.first}}核</button>
+                            </div>
+                            <div class="gshu">
+                                <div class="next2 btn-group  clear" style="display: block">
+                                    <button type="button" class="btn btn-default " data-second="{{o.second}}" ng-repeat="o in heshuitem|allfirst1:'first'">{{o.second/1024}}GB</button>
+                                </div>
+                                <div class="next2 btn-group  clear">
+                                    <button type="button" class="btn btn-default "data-second="{{o.second}}" ng-repeat="o in heshuitem|allfirst2:'first'">{{o.second/1024}}GB</button>
+                                </div>
+                                <div class="next2 btn-group  clear">
+                                    <button type="button" class="btn btn-default " data-second="{{o.second}}" ng-repeat="o in heshuitem|allfirst4:'first'">{{o.second/1024}}GB</button>
+                                </div>
+                                <div class="next2 btn-group  clear">
+                                    <button type="button" class="btn btn-default " data-second="{{o.second}}" ng-repeat="o in heshuitem|allfirst8:'first'">{{o.second/1024}}GB</button>
+                                </div>
+                                <div class="next2 btn-group  clear">
+                                    <button type="button" class="btn btn-default "  data-second="{{o.second}}" ng-repeat="o in heshuitem|allfirst12:'first'">{{o.second/1024}}GB</button>
+                                </div>
+                            </div>
+
+                        </div>
+
+                    </div>
+                    <div class="slice"></div>
+
+                    <div class="price-router">
+                        <p class="price-small-title">路由器  </p>
+                        <div class="btn-group router">
+                            <button type="button" class="btn btn-default selected">小型</button>
+                        </div>
+                    </div>
+                    <div class="slice"></div>
+
+                    <div class="price-volume">
+                        <p class="price-small-title">硬盘 <span>{{}}</span> </p>
+                        <div class="btn-group next1 yingpan">
+                            <button type="button" class="btn btn-default " data-id='{{o.qosid}}' ng-repeat="o in volume">{{o.name}}</button>
+                        </div>
+                        <div>
+                            <div class="next2" style="margin: 20px 0 0 0; display: block">
+                                <div style="display: inline-block; margin:0 30px 0 0;padding: 0 0 -10px 0;">
+
+                                <input class="defvolue" id="firstyingpan" ng-mouseup="ajaxvolumeprice1()" style="margin:0 30px 0 0;" type="range" min="10" max="1000" step="10" ng-model="ypx"  data-rangeslider>
+                               </div>
+                                <div class="btn-group input-value" >
+                                    <button  type="button" class="btn btn-default jianfa"ng-click="jianfa1()">-</button>
+                                    <input readonly type="text" style="width:60px"  ng-model="ypx"   value="{{ypx}}" class="btn btn-default defvolue"> <i class="danwei">GB</i>
+                                    <button type="button" class="btn btn-default" ng-click="jiafa1()">+</button>
+                                </div>
+                            </div>
+                            <div class="next2" style="margin: 20px 0 0 0; ">
+                                <div style="display: inline-block; margin:0 30px 0 0;padding: 0 0 -10px 0;">
+                                    <input  ng-mouseup="ajaxvolumeprice1()"  type="range" min="100" max="5000" step="100" ng-model="ypr" data-rangeslider>
+                                </div>
+                                <div class="btn-group input-value"style="    margin-left: 30px;">
+                                    <button type="button" class="btn btn-default jianfa"ng-click="jianfa2()">-</button>
+                                    <input readonly type="text" style="width:60px" ng-model="ypr" value="{{ypr}}" class="btn btn-default"> <i class="danwei">GB</i>
+                                    <button type="button" class="btn btn-default" ng-click="jiafa2()">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="slice"></div>
+
+                    <div class="price-kuaidai">
+                        <p class="price-small-title">宽带 <span>{{}}</span> </p>
+
+                        <div class="next2" style="margin: 20px 0 0 0; display: block">
+                            <div style="display: inline-block; margin:0 30px 0 0;padding: 0 0 -10px 0;">
+
+                            <input class="defkuandai"  ng-mouseup="ajaxkuabndaiprice1()" style="margin:0 30px 0 0;"  type="range" min="1" max="300" step="1" ng-model="kuandais" data-rangeslider>
+
+                                </div>
+                            <div class="btn-group input-value">
+                                <button class="btn btn-default jianfa" type="button" ng-click="jianfa3()">-</button>
+                                <input class="btn btn-default defkuandai" id="kuaidaiqosid" readonly type="text" style="width:60px" data-kuaidaiqosid={{kuandai.QOSId}}  value="{{kuandais}}" > <i class="danwei">Mbps</i>
+                                <button type="button" class="btn btn-default" ng-click="jiafa3()">+</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slice"></div>
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+            </div>
+        </div>
+
+        <div class="price-right fr clear" style="">
+            <div >
+                <select style="display: none" class="btn jisuanjiage btn-default" ng-model="kinds" id="aaa" ng-options="o.positionId as o.kind for o in kind"></select>
+                <div class="jisuanqi">
+                    <table>
+                        <caption style="text-align: center;font-weight: bold;font-size: 20px;color:#333">费用概览</caption>
+                        <tbody>
+                        <tr>
+                            <td style="width: 39%">
+                                主机 Instance <br>
+                                <span>{{winLinuxname}} {{heshuselect}}_</span><span class="text-gshu">1G</span>
+                            </td>
+                            <td style="width: 38%">
+                                <div class="btn-group input-value">
+                                    <button type="button" remove class="btn btn-default jianfa" item="zhujiNum">-</button>
+                                    <input readonly type="text" style="width:45px"  ng-model="zhujiNum" value="{{zhujiNum}}" class="btn btn-default">
+                                    <button type="button" add class="btn btn-default" item="zhujiNum">+</button>
+                                </div>
+                            </td>
+                            <td style="width: 20%"><span class="zhujiprice">{{zhujiprice*zhujiNum| number:4}}</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                宽带 <br>
+                                <span>{{kuandais}}Mbps</span>
+                            </td>
+                            <td>
+                                <div class="btn-group input-value">
+                                    <button type="button" remove  class="btn btn-default jianfa" item="kuandaiNum">-</button>
+                                    <input readonly type="text" style="width:45px"  ng-model="kuandaiNum" value="{{kuandaiNum}}" class="btn btn-default">
+                                    <button type="button" add class="btn btn-default" item="kuandaiNum">+</button>
+                                </div>
+                            </td>
+                            <td><span class="kuandaiprice">{{kuabndaiprice*kuandaiNum| number:4}}</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                路由器 Router
+                                <br><span>小型</span>
+                            </td>
+                            <td>
+                                <div class="btn-group input-value ">
+                                    <button type="button" remove class="btn btn-default jianfa" item="routerNum">-</button>
+                                    <input readonly type="text" style="width:45px"  ng-model="routerNum" value="{{routerNum}}" class="btn btn-default">
+                                    <button type="button" add class="btn btn-default" item="routerNum">+</button>
+                                </div>
+                            </td>
+                            <td><span class="routeprice">{{routerprice*routerNum| number:4}}</span></td>
+                        </tr>
+                        <tr>
+                            <td>
+                                硬盘 Volume <br>
+                                <span>{{volumeselcet}}<span ng-show="ypxorypr">{{ypx}}</span><span ng-hide="ypxorypr">{{ypr}}</span>GB</span>
+                            </td>
+                            <td>
+                                <div class="btn-group input-value">
+                                    <button type="button"  remove class="btn btn-default jianfa" item="volumeNum">-</button>
+                                    <input readonly type="text" style="width:45px"  ng-model="volumeNum" value="{{volumeNum}}" class="btn btn-default">
+                                    <button type="button" add class="btn btn-default" item="volumeNum">+</button>
+                                </div>
+                            </td>
+                            <td><span class="volumeprice">{{volumeprice*volumeNum| number:4}}</span></td>
+                        </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+                <p><span>总计</span> <i > <span style="font-size: 18px;font-weight: bold;color:#2277DA;">{{allprice|number:4}} </span>元/小时</i></p>
+            </div>
+        </div>
+    </div>
+    <script>
+        linshi.priceshowtop=$(".price-right").offset().top;
+    </script>
+</div>

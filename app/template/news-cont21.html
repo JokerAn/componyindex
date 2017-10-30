@@ -1,0 +1,145 @@
+<div id="newsbox" class="newsbox_cont">
+    <div class="news-hader">
+        <div class="banner-text">
+            <p class="banner-title">新闻动态</p>
+            <p>通过媒体报道，理解我们更多的侧面</p>
+        </div>
+    </div>
+    <!-- news cont start-->
+    <div class="news-wapcont">
+        <div class="fl cont_left">
+            <h2 class="cont_left-title">
+                <a ng-click="gotoPage('/about/news')" href="javascript:;">
+                    < 返回最近报道列表
+                </a>
+            </h2>
+            <div class="cont_list">
+                <h1>
+                    龙腾混合云解决方案助力企业实现高效的互联互通
+                </h1>
+            </div>
+            <p class="news_cont-data">
+                <span>
+                    2017-06-26
+                </span>
+                <!-- <span style="margin-left: 40px;">
+                     来源：
+                 </span>-->
+            </p>
+            <div class="news_cont-list">
+                <p>
+                    <img style="width: 700px" src="images/lthhy0.png" alt="">
+                </p>
+                <p>
+                    相比于公有云，私有云最大优势在于法规遵从和数据保护，可靠性、安全性都在IT部门的掌控中；
+                    而公有云计算资源的弹性和灵活伸缩能力又是私有云无法达成的。所以，
+                    如何最大程度利用公有云和私有云的优势，龙腾混合云解决方案完美的实现公有云和私有云鱼和熊掌兼得。
+                </p>
+                <p>
+                    私有云与外部资源接入包括：私有云对接公有云、私有云跨数据中心部署以及私有云与数据中心互联三种场景。
+                    连接的方式包括传统的运营商专线互联、互联网 VPN 互联和云高速通道互联网。
+                </p>
+                <p>
+                    传统的专线服务施工周期以月计算，无法做到快速响应客户的业务变化，而龙腾云 SDN 服务的开通以小时响应。
+                    在同样带宽速率和通信质量的情况下，费用比传统专线便宜数倍。用户可以根据自己的实际业务，
+                    可以按时间或者按触发条件自动实时调整带宽，
+                    从而进一步降低成本。采用龙腾云高速通道的 SDN 方式可实现灵活、快速、可靠的互联互通。
+                </p>
+                <p style="text-align: left;color: cornflowerblue;">
+                    混合云高速通道
+                </p>
+                <p>
+                    <img style="width: 770px;" src="images/lthhy1.png" alt="">
+                </p>
+                <p>
+                    基于 VXLAN 构建私有云和公有云 VPC 之间的 L2 网络。
+                </p>
+                <p>
+                    ① 公有云 VXLAN-Proxy : 部署在 VM 上的应用， 私有云 VXLAN-Proxy 部署于网络节点，
+                    构建隧道 2 端点，通过 BGP 协议通告 VM IP/MAC 信息。
+                    VXLAN-Proxy 支持ARP 应答， 避免广播报文跨 Cloud 传播。
+                </p>
+                <p>
+                    ② 基于 DTLS 隧道加密封装：秘钥由企业统一分配和管理。
+                </p>
+                <p>
+                    ③ 公有云 VM 与企业私有云 VM 在同一个私有云地址空间，确保 VM 在混合云中在线迁移。
+                </p>
+                <p>
+                    ④ VXLAN–Bridge 支持物理服务器(VLAN) 向虚拟机迁移与互通。
+                </p>
+                <p>
+                    上面是高速通道的技术实现方式。在此基础上，龙腾云采用 SD-WAN 的高速通道方式，
+                    能够实现私有云与包括阿里云、青云等多家公有云的互联互通。
+                </p>
+                <p>
+                    龙腾云具备“云互联”模块，已经实现与多家公有云平台建立光纤链路。通过SD-WAN技术，
+                    用户私有云与龙腾公有云平台对接以后，自动实现与其它公有云平台的互联互通。
+                    只要用户在公有云申请自有账号，就可以实现高速通道的对接。
+                </p>
+                <p style="text-align: left;color: cornflowerblue;">
+                    混合云 IP VPN 隧道
+                </p>
+                <p>
+                    <img style="width: 670px;" src="images/lthhy2.png" alt="">
+                </p>
+                <p>采用 IPVPN 通道的技术实现方式如上图：</p>
+                <p>① 可使用 IPSec VPN 实现到公有云的安全连接。</p>
+                <p>② 支持 IPSec 双通道，避免单点故障。</p>
+                <p>
+                    ③ 可使用软件 VSA（ Virtual Service Appliance）或 物理防火墙支持 IPSec 连接。
+                </p>
+                <p>
+                    采用互联网 VPN 方式实现私有云与公有云互联，网络技术相对较复杂，
+                    而且容易受到互联网的网络质量的影响。但互联网带宽资源在各个公有云和数据中心比较容易获得，
+                    因此跨地区互联也具备一定的实用价值。
+                </p>
+                <p>龙腾佳讯具备全国 MPLS VPN 运营牌照，可以帮助客户实现跨地区的互联网 VPN 互联互通。</p>
+                <p style="text-align: left;color: cornflowerblue;">跨其它网络的混合云组网</p>
+                <p>
+                    由于龙腾云采用 SDN 技术，私有云与其它资源的连接无需长期保持昂贵的运营商接入带宽， 需要时自助式接通服务即可。
+                    跨数据中心以及企业驻地、企业分支机构之间同样也可用 SDN 专线连接。
+                </p>
+                <p style="text-align: left;color: cornflowerblue;">
+                    混合云统一调度管理
+                </p>
+                <p>
+                    混合云统一调度管理是指将公有云也作为企业云的一个管理域，按企业私有云同样的业务策略进行管理。
+                </p>
+                <p>
+                    龙腾云作为阿里云高速通道的合作伙伴，具备将阿里公有云无缝的与客户私有云进行连接的能力。
+                    同时， 龙腾云作为青云的合作伙伴，可以采用合作伙伴 API 的调用以及更高额度的API 访问次数配额许可，
+                    帮助客户实现私有云与公有云的无缝对接和统一调度管理。
+                </p>
+                <p>龙腾云SDN真正实现了多云互联、云网互通。</p>
+                <p>
+                    <img src="images/sheng35.png" alt="">
+                </p>
+            </div>
+
+        </div>
+
+        <div class="fr cont_right" ng-include="'template/news_report.html'">
+
+        </div>
+
+        <div class="news_cont-node">
+            <div ng-click="gotoPage('/news-cont20')"
+                 style="margin-top: 16px;display: inline-block;margin-left: 10px;  color: #2277da;">
+                上一篇报道：
+                <a href="javascript:;" style="color:#333;display: inline-block;">
+                    龙腾云高速通道服务助您轻松实现云网互通
+                </a>
+            </div>
+            <div style=" margin-left: 10px;     margin-top: 16px;  color: #2277da;">
+                下一篇报道：
+                <a ng-click="gotoPage('/news-cont22')" href="javascript:;"
+                   style="color:#333;display: inline-block;">
+                    龙腾电信云全自助服务功能赢得客户好评
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!-- news cont end-->
+</div>

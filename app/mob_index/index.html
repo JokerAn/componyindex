@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="an">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+    initial-scale=1.0, minimum-scale=1, maximum-scale=2, user-scalable=yes" />
+    <base href="/mob_index/index.html">
+    <title>龙腾佳讯</title>
+
+
+    <link rel="icon" href="images/iconlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="tel/global.css">
+    <link rel="stylesheet" href="tel/documentation-v2.css">
+    <link rel="stylesheet" href="tel/responsive-navigation-footer.css">
+    <link rel="stylesheet" href="tel/global-components.css">
+    <link rel="stylesheet" href="tel/solution-global.css">
+    <link href="tel/product-temp20160918.css" rel="stylesheet" >
+    <link rel="stylesheet" href="css2/zsj.css">
+    <link rel="stylesheet" href="css2/about.css">
+    <link href="tel/product-cvm.css" rel="stylesheet"  >
+    <link rel="stylesheet" href="tel/solution-e-commerce.css">
+    <link rel="stylesheet" href="tel/solution-database.css">
+    <link rel="stylesheet" href="tel/solution-global.css">
+
+
+    <link rel="icon" href="images/iconlogo.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link href="tel/product-temp20160918.css" rel="stylesheet" >
+
+    <link rel="stylesheet" href="tel/global.css">
+    <link rel="stylesheet" href="tel/documentation-v2.css">
+    <link rel="stylesheet" href="tel/responsive-navigation-footer.css">
+    <link rel="stylesheet" href="tel/global-components.css">
+    <link rel="stylesheet" href="tel/solution-global.css">
+    <link rel="stylesheet" href="tel/index.css">
+
+    <link href="tel/product-cvm.css" rel="stylesheet"  >
+
+    <script src="longtelwebjs/jquery-1.12.4.js"></script>
+    <script src="longtelwebjs/angular.js"></script>
+    <script src="longtelwebjs/angular-route.js"></script>
+    <script src="longtelwebjs/bootstrap.min.js"></script>
+    <script src="longtelwebjs/angu.js"></script>
+    <script src="longtelwebjs/main.js"></script>
+    <script src="build/TouchSlide.1.1.js"></script>
+</head>
+<style>
+    .clear:after {
+        content: ".";
+        display: block;
+        height: 0;
+        clear: both;
+        visibility: hidden;
+    }
+    html .body{
+        position: inherit;
+    }
+    ol, ul, li, p {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    html{font-size:100px;}
+    ol, ul, li, p {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    li,ul,ol{
+        list-style-type: none;
+    }
+    @font-face {
+        font-family: 'iconfont';
+        src: url('font/iconfontan.eot'); /* IE9*/
+        src: url('font/iconfontan.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('font/iconfontan.woff') format('woff'), /* chrome、firefox */ url('font/iconfontan.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/ url('font/iconfontan.svg#iconfont') format('svg'); /* iOS 4.1- */
+    }
+
+
+    .iconfont {
+        font-family: "iconfont" !important;
+        font-size: 16px;
+        font-style: normal;
+        -webkit-font-smoothing: antialiased;
+        -webkit-text-stroke-width: 0.2px;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+
+
+    #nav{
+        background: #111;
+        z-index: 1000;
+        position: absolute;
+        width: 100%;
+        border: none;
+        margin: 0;
+    }
+    #nav a,.yunzhuji li a{
+        color:#fff;
+        font-size: 0.16rem;
+        display: block;;
+    }
+    #nav a:active,.yunzhuji a:active{
+        background: #888;
+    }
+    nav li,.yunzhuji li{position: relative;}
+    #nav a:focus,.yunzhujia:focus{
+        text-decoration: none!important;
+    }
+    nav ul>li>ul{
+        background: #282a2f
+    }
+    nav ul ul ul,.yunzhuji li ul{
+        background-color: #36383e;
+    }
+    nav ul ul li a,.yunzhuji li a{
+        padding:0.1rem 0.25rem;
+    }
+    nav .weblogo{
+        display: inline-block;
+        width:1.5rem;
+        height:0.48rem;
+        margin-left:0.3rem;
+        /*border:1px solid #ddd;*/
+        background:url("images/logo.png") no-repeat center center;
+        background-size:95%;
+    }
+    nav ul ul ul li a,.yunzhuji li li a {
+        position: relative;
+        padding:0.1rem 0.6rem;
+    }
+    nav ul ul ul li:before,.yunzhuji li li:before{
+        content: "• ";
+        color: #fff;
+        position: absolute;
+        left: 0.5rem;
+        font-weight: 400;
+        font-size: 0.12rem;
+        top:0.1rem;
+    }
+    nav i,.yunzhuji i{
+        color: #ddd;
+        font-weight: 900;
+        font-size:0.2rem;
+        position: absolute;
+        right:0.22rem;
+        top:0.1rem;
+    }
+    nav i.icon-d,.yunzhuji i.icon-d{
+        display: none;
+    }
+    .yunzhuji{
+        background: #111;
+        width:100%;
+        position: relative;
+        top: 0;  left:100%;
+        transition: all 0.5s;
+        z-index: 1200;
+    }
+    .yunzhuji.active{
+        left:0;
+        transition: all 0.5s;
+    }
+    .ycp-top{
+        border-bottom:1px solid #fff;
+        color: #fff;
+    }
+    .ycp-top span{
+        padding:0.1rem 0.2rem;
+        font-size:0.18rem;
+        display: inline-block;
+    }
+    .zhezhaoceng{
+        width:100%;height:100%;
+        position: fixed;
+        background:#111;
+        opacity:0.7;
+        top:0;  left:0;
+        bottom:0;  right:0;
+        z-index: 900;
+        display: none;
+    }
+    .body{
+        position: absolute;
+        top:0.5rem;
+    }
+    .an-img-top-h4{
+        margin:20px 0;
+        font-size:18px;
+    }
+    .an-img-top-p{
+        margin:0 0 20px 0;
+        font-size:16px;
+    }
+    .framework-img img{
+        max-width:90%;
+    }
+    div.vertical-size>span.item-icon>img{
+        width:100%
+    }
+
+    /*轮播*/
+    .img-item.J-hero-img.type-light{
+        display: inline-block;;
+    }
+    #heroBanner .hero-inner .hero-img{
+        width:100%;
+    }
+    #heroBanner .hero-inner .hero-img>div{
+        width: 100%;
+        position: relative;
+        display: inline-block;
+        background-size: 100%;
+    }
+    #heroBanner .index-hp0{
+        background: url(/tel/tengxunlun.jpg) no-repeat center center;
+    }
+    #heroBanner .index-hp1{
+        background: url(/images/appcenter.png) no-repeat center center;
+    }
+    #heroBanner .index-hp2{
+        background: url(/images/dianxinyun.png) no-repeat center center;
+    }
+    #heroBanner .index-hp3{
+        background: url(/tel/tengxunlun.jpg) no-repeat center center;
+    }
+
+
+
+
+
+
+
+    .mod-wrap-product-new .pt-detail-name .pt-name-img.iaas{
+        background:url(images/3.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    .mod-wrap-product-new .pt-detail-name .pt-name-img.caas{
+        background:url(images/2.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    .mod-wrap-product-new .pt-detail-name .pt-name-img.secaas{
+        background:url(images/1.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    .mod-wrap-product-new .pt-detail-name .pt-name-img.saas{
+        background:url(images/4.png) no-repeat 0 0;
+        background-size: 100%;
+    }
+    /*#free,#newlibao,#sale,#mbeian{*/
+    /*padding:53px 30px;*/
+    /*}*/
+    #free .img-titleshow {
+        background: url(images/freetiyan.jpg) no-repeat center center #e1e4eb;
+    }
+    #newlibao .img-titleshow {
+        background: url(images/newlibao.jpg) no-repeat center center #e1e4eb;
+    }
+    #mhuodong .img-titleshow {
+        background: url(images/lun2017_2.png)no-repeat center center;
+        background-size: 100%;
+    }
+    #mbeian .img-titleshow {
+        background: url(images/beian.jpg) no-repeat center center #e1e4eb;
+        background-size: 100% 170px;
+    }
+    .free-content{
+        border:1px solid #ddd;
+        margin:15px 0;
+        padding:30px 15px;
+    }
+
+    .free-he li{
+        display: inline-block;
+        width:30%;
+    }
+
+    .free-he li p:first-child span{
+        font-size: 30px;
+        margin-right: 4px;
+    }
+    .free-he li p:last-child {
+        color: #999;
+    }
+    .img-titleshow{
+        /*margin: 0 -30px;*/
+        height: 170px;
+        text-align: center;
+    }
+    .img-titleshow h1{
+        font-weight: 400;
+        font-size:30px;
+        padding: 50px 0 20px 0;
+    }
+
+    .guize {
+        margin: 50px auto;
+        border: 1px solid #ddd;
+        padding: 25px 50px;
+    }
+
+    .guize > p {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+
+    .guize > ul {
+        margin-left: 50px
+    }
+
+    .guize > ul li {
+        list-style: decimal;
+        line-height: 26px;
+    }
+
+
+
+    #mbeian > div > ul {
+        position: relative;
+        z-index: 100;
+    }
+
+    #mbeian > div > ul li {
+        float: left;
+        text-align: center;
+        width: 33%;
+        border: 1px solid #ddd;
+        margin:0 0 20px 1px;
+        padding:10px 0;
+    }
+
+    #mbeian > div > ul li p {
+        margin: 10px 0 20px 0;
+    }
+
+    #mbeian > div > ul li span {
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        line-height: 20px;
+        border-radius: 50%;
+        background-color: #383d41;
+        color: #fff;
+        font-size: 12px;
+        z-index: 100;
+        cursor: pointer;
+    }
+
+    @media only screen and (min-width:415px){
+        .free-he li{
+            display: inline-block;
+            width:19%;
+        }
+        #mbeian > div > ul li {
+            width: 19%;
+        }
+    }
+    @media screen and (max-width: 414px){
+        .qc-footer-website .m-call .call-num {
+            display: block;
+            font-size: 14px;
+            color: #ccc;
+            border-radius: 2px;
+            border: 1px solid #ccc;
+            line-height: 40px;
+            text-align: center;
+        }}
+    #a1{
+        padding-top:53px;
+    }
+    /*轮播star*/
+
+    .slideBox{position:relative;  overflow:hidden; margin:0 auto; }
+    .slideBox .hd{ position:absolute;  bottom:5px;width:100%;  z-index:1; }
+    .slideBox .hd ul{  margin:0 auto; text-align: center}
+    .slideBox .hd li{ display:inline-block; width:25px;height:12px; background:#333;
+        text-indent:-9999px;overflow:hidden; margin:0 6px;   }
+    .slideBox .hd li.on{ background:#eee;  }
+    .slideBox .bd{ position:relative; z-index:0; }
+    .slideBox .bd li{ position:relative; text-align:center;  }
+    .slideBox .bd li a{ display: block; }
+    .bd ul .an-lun-1{  background:url("images/shu-zhounianhui.png") no-repeat center center  }  /*one*/
+    .bd ul .an-lun-2{  background:url("images/shu-gstd.png") no-repeat center center  }
+    .bd ul .an-lun-3{  background:url("images/shu-hhy.png") no-repeat center center  }
+    .bd ul .an-lun-4{  background:url("images/shu-yunwangguan.png") no-repeat center center  }
+    .bd ul .an-lun-5{  background:url("images/shu-yunjiankong.png") no-repeat center center  }
+    .bd ul .an-lun-6{  background:url("images/qqjscplog-shu.png") no-repeat center center  }
+    .bd ul li a{  background-size:100%!important  }
+    .bd ul .an-lun-7{  background:url("images/yunpaizhao-shu.png") no-repeat center center  }
+    .bd ul .an-lun-8{  background:url("images/yunkengd-shu.png") no-repeat center center  }
+    @media screen and (max-width:740px) and (min-width:568px) {
+        .bd ul .an-lun-1{  background:url("images/heng-zhounianhui.png") no-repeat center center  }
+        .bd ul .an-lun-2{  background:url("images/heng-gstd.png") no-repeat center center  }
+        .bd ul .an-lun-3{  background:url("images/heng-hhy.png") no-repeat center center  }
+        .bd ul .an-lun-4{  background:url("images/heng-yunwangguan.png") no-repeat center center  }
+        .bd ul .an-lun-5{  background:url("images/heng-yunjiankong.png") no-repeat center center  }
+        .bd ul .an-lun-6{  background:url("images/qqjscplog-heng.png") no-repeat center center;  }
+        .bd ul .an-lun-7{  background:url("images/yunpaizhao-heng.png") no-repeat center center;  }
+        .bd ul .an-lun-8{  background:url("images/yunkengd-heng.png") no-repeat center center  }
+    }
+    .slideBox .bd .tempWrap {height: 290px;}
+    .slideBox .bd ul li a {height: 290px;}
+
+    /*轮播end*/
+</style>
+
+<body ng-controller="allcontrol">
+<nav id="nav" class="navbar navbar-default" >
+    <!-- 小窗口展示的导航 -->
+    <div class="navbar-header">
+        <button id="an-btn" type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#ananan">
+            <span class="sr-only">啊啊啊1</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+        <b href="javascript:;" ng-click="gotoPage('/mindex2')" class="weblogo onlylogo"></b>
+    </div>
+
+    <!-- 合并前展示的导航 -->
+    <div class="collapse navbar-collapse" id="ananan"  >
+        <ul class="nav navbar-nav ">
+            <li id="yunchanpin" class="an-dropdown">
+                <a  href="javascript:;" class="">公有云
+                    <i class="icon icon-u iconfont ">&#xe6a7;</i>
+                </a>
+            </li>
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">私有云
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li class="dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle">私有云
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li ng-click="gotoPage('/directconnect')" class="an-dropdown"><a href="javascript:;" class="">云接入</a></li>
+                            <li ng-click="gotoPage('/managedprivatecloud')" class="an-dropdown"><a href="javascript:;" class="">托管云</a></li>
+                            <li ng-click="gotoPage('/openstackcloud')" class="an-dropdown"><a href="javascript:;" class="">私有云</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+            </li>
+            <li class="an-dropdown">
+                <a  href="javascript:;"  class="an-dropdown-toggle">解决方案
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li class="an-dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle" >通用解决方案
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li><a href="javascript:;"  ng-click="gotoPage('/solutions/hybirdcloud')">混合云</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/solutions/idc')">数据中心</a></li>
+                        </ul>
+                    </li>
+                    <li class="an-dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle">行业解决方案
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li><a href="javascript:;" ng-click="gotoPage('/solutions/e-commerce')">电商OTO</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/solutions/retail')">零售业</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/solutions/callcenter')">呼叫中心</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">渠道合作
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li class="dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle">推广合作
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li><a href="javascript:;" ng-click="gotoPage('/partners')">推广合作</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/partners')">渠道伙伴</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">文档与支持
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li class="an-dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle">文档
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li><a href="javascript:;" ng-click="gotoPage('/documents/userguide')">产品文档</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/documents/caas/createservice')">快速入门</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/documents/faq')">FAQ</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">关于龙腾云
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li class="dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle">新闻动态
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li><a href="javascript:;" ng-click="gotoPage('/about/news')">新闻动态</a></li>
+                            <li><a href="javascript:;" ng-click="gotoPage('/documents/tos')">服务条款</a></li>
+                        </ul>
+                    </li>
+                    <li class="an-dropdown">
+                        <a href="javascript:;" class="an-dropdown-toggle">关于我们
+                            <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                            <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                        </a>
+                        <ul class="an-dropdown-menu" style="display: none;" >
+                            <li><a href="javascript:;"ng-click="gotoPage('/about/contact_us')">联系我们</a></li>
+                            <li><a href="javascript:;"ng-click="gotoPage('/about')">关于我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+
+            <li class="onlybeian" class="dropdown"ng-click="gotoPage('/icp')" >
+                <a href="javascript:;">备案</a>
+            </li>
+        </ul>
+    </div>
+
+</nav>
+<div id="yunzj" style="width:100%;overflow-x:hidden ;position: absolute;top:0;
+            left:0;z-index: -100">
+    <div class="yunzhuji" style="">
+        <div class="ycp-top">
+            <span>公有云</span> <i class="icon icon-close iconfont ">&#xe697;</i>
+
+        </div>
+        <ul class="second-ycp" style="min-height:300px">
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">IaaS公有云
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li ng-click="gotoPage('/iaas/telcloudhost')"><a href="javascript:;">云主机</a></li>
+                    <li ng-click="gotoPage('/iaas/image')"><a href="javascript:;">镜像</a></li>
+                    <li ng-click="gotoPage('/iaas/telcloudstorage')"><a href="javascript:;">云硬盘</a></li>
+                    <li ng-click="gotoPage('/iaas/snapshot')"><a href="javascript:;">备份</a></li>
+                    <li ng-click="gotoPage('/iaas/vpc')"><a href="javascript:;">私有网络</a></li>
+                    <li ng-click="gotoPage('/iaas/monitormanagement')"><a href="javascript:;">监控与管理</a></li>
+                </ul>
+            </li>
+            <!--<li class="an-dropdown">-->
+            <!--<a href="javascript:;" class="an-dropdown-toggle">IaaS私有云-->
+            <!--<i class="icon icon-u iconfont ">&#xe6a6;</i>-->
+            <!--<i class="icon icon-d iconfont ">&#xe6a5;</i>-->
+            <!--</a>-->
+            <!--<ul class="an-dropdown-menu" style="display: none;" >-->
+            <!--<li ng-click="gotoPage('/telclouddirectconnect')" class="an-dropdown"><a href="javascript:;" class="">云接入</a></li>-->
+            <!--<li ng-click="gotoPage('/managedprivatecloud')" class="an-dropdown"><a href="javascript:;" class="">托管云</a></li>-->
+            <!--<li ng-click="gotoPage('/openstackcloud')" class="an-dropdown"><a href="javascript:;" class="">私有云</a></li>-->
+            <!--</ul>-->
+            <!--</li>-->
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">CaaS电信云
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li ng-click="gotoPage('/caas/internetaccess')" class="dropdown"><a href="javascript:;" class="">互联网接入</a></li>
+                    <li ng-click="gotoPage('/caas/transmissioncircuit')" class="an-dropdown"><a href="javascript:;" class="">传输电路</a></li>
+                    <li ng-click="gotoPage('/caas/30b&d')" class="an-dropdown"><a href="javascript:;" class="">语音中继</a></li>
+                    <li ng-click="gotoPage('/caas/expressconnect')" class="an-dropdown"><a href="javascript:;" class="">高速通道</a></li>
+                </ul>
+            </li>
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">SECaaS安全云
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li ng-click="gotoPage('/secaas/networksystemsmanagement')" class="dropdown"><a href="javascript:;" class="">上网行为管理</a></li>
+                    <li ng-click="gotoPage('/secaas/gateway')" class="an-dropdown"><a href="javascript:;" class="">智慧云网关</a></li>
+                    <li ng-click="gotoPage('/secaas/anti-ddos')" class="an-dropdown"><a href="javascript:;" class="">抗D产品</a></li>
+                </ul>
+            </li>
+            <li class="an-dropdown">
+                <a href="javascript:;" class="an-dropdown-toggle">SaaS软件云
+                    <i class="icon icon-u iconfont ">&#xe6a6;</i>
+                    <i class="icon icon-d iconfont ">&#xe6a5;</i>
+                </a>
+                <ul class="an-dropdown-menu" style="display: none;" >
+                    <li ng-click="gotoPage('/saas/telcloudmonitor')" class="dropdown"><a href="javascript:;" class="">云监控</a></li>
+                    <li ng-click="gotoPage('/saas/telcloudaccelerate')" class="dropdown"><a href="javascript:;" class="">龙腾国际加速产品</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="zhezhaoceng"></div>
+<script>
+    $(document).delegate(".list-content-head","click", function () {
+        $(this).next("div").slideToggle();
+    });
+    $(".an-dropdown-toggle").click(function(){
+        var zhuangtai=$(this).siblings("ul").css("display");
+//        console.log(zhuangtai)
+        if(zhuangtai=="block"){
+            $(this).children("i.icon-u").show();
+            $(this).parent("li").siblings("li").children("a").children("i.icon-d").hide().siblings("i.icon-u").show();
+            $(this).children("i.icon-d").hide();
+        }else{
+
+            $(this).children("i.icon-u").hide();
+            $(this).children("i.icon-d").show();
+
+            $(this).parent("li").siblings("li").children("a").children("i.icon-d").hide().siblings("i.icon-u").show();
+
+        }
+        $(this).parent("li").siblings("li").children("ul").stop(true, false).slideUp().children("li").children("ul").stop(true, false).slideUp();
+        $(this).siblings(".an-dropdown-menu").stop(true, false).slideToggle();
+    });
+    $("#yunchanpin").click(function(){
+        $("#yunzj").css("z-index","1210");
+        $(".yunzhuji").css("display","block").addClass("active");
+        $(this).siblings("li").children("ul").stop(true, false).slideUp().children("li").children("ul").stop(true, false).slideUp();
+//        console.log($(this));
+    });
+    $(".icon-close").click(function(){
+        setTimeout(function(){
+            $("#yunzj").css("z-index","-100");
+        },300);
+
+        $(".yunzhuji").removeClass("active");
+        $(".second-ycp").children("li").children("ul").slideUp();
+    });
+    $(".zhezhaoceng").click(function(){
+        $(this).hide();
+        $("nav .collapse.navbar-collapse").removeClass("in");
+        $(".yunzhuji").hide();
+        $("#yunzj").css("z-index","-100");
+    });
+    $("#an-btn").click(function(){
+//        console.log($(".zhezhaoceng").css("display"));
+        if($(".zhezhaoceng").css("display")=="none"){
+            $(".zhezhaoceng").show();
+
+        }else{
+            $(".zhezhaoceng").hide();
+            $("#yunzj").css("z-index","-100");
+        }
+        $(".yunzhuji").show().removeClass("active");
+    });
+    $("nav ul ul ul a").click(function(){$("#an-btn").click()});
+    $(".yunzhuji ul ul a").click(function(){
+        $("#an-btn").click();
+        $(this).parent().parent("ul").slideUp();
+    });
+    $(".onlybeian").click(function(){$("#an-btn").click()});
+    $(".onlylogo").click(function(){
+        $(".zhezhaoceng").click();
+    })
+
+</script>
+<div id="a1" class="clear" ng-view>
+
+</div>
+<div ng-include="'footer.html'"></div>
+</body>
+
+</html>

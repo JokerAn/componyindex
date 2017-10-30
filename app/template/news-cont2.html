@@ -9,13 +9,13 @@
     <div class="news-wapcont">
         <div class="fl cont_left">
             <h2 class="cont_left-title">
-                <a ng-click="gotoPage('/news')" href="javascript:;">
+                <a ng-click="gotoPage('/about/news')" href="javascript:;">
                     < 返回最近报道列表
                 </a>
             </h2>
             <div class="cont_list">
                 <h1>
-                    **优惠政策及活动规则
+                    龙腾云优惠政策及活动规则
                 </h1>
             </div>
             <p class="news_cont-data">
@@ -82,7 +82,7 @@
                     </strong>
                 </p>
                 <p>
-                    使用**IAAS北京一区创建云主机，零网费。
+                    使用龙腾云IAAS北京一区创建云主机，零网费。
                 </p>
                 <p>
                     活动规则:
@@ -102,7 +102,7 @@
                     </strong>
                 </p>
                 <p>
-                    购买**IAAS服务，已购CaaS带宽免费提速100%！
+                    购买龙腾云IaaS服务，已购CaaS带宽免费提速100%！
                 </p>
                 <p>
                     活动规则:
@@ -121,73 +121,21 @@
                 <div style="    color: #2277da;">
                     上一篇报道：
                     <a ng-click="gotoPage('/news-cont1')" href="javascript:;" style="color:#333;display: inline-block;">
-                        高校移动创新大赛，**助你飞翔
+                        高校移动创新大赛，龙腾云助你飞翔
                     </a>
                 </div>
                 <div style="      margin-top: 16px;  color: #2277da;">
                     下一篇报道：
                     <a ng-click="gotoPage('/news-cont3')" href="javascript:;" style="color:#333;display: inline-block;">
-                        **携手中网，和你一起圆梦
+                        龙腾云携手中网，和你一起圆梦
                     </a>
                 </div>
             </div>
 
         </div>
 
-        <div class="fr cont_right">
-            <div class="right_cont">
-                <h2 class="cont_rightt-title">
-                    热门报道
-                    <span class="line fl"></span>
-                </h2>
-                <ul class="cont_right-list">
-                    <li>
-                        <a ng-click="gotoPage('/news-cont10')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            全新形象、全新改变 ——**官网全新改版上线
-                        </a>
-                        <p class="news-latest-date">
-                            2017-02-13
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont9')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            ****成为清华大数据产业联合会理事单位
-                        </a>
-                        <p class="news-latest-date">
-                            2017-01-25
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont8')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            "**"携手伙伴共展云途，看看这是一朵什么云？
-                        </a>
-                        <p class="news-latest-date">
-                            2016-12-19
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont7')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            合众力 作云端 运千家 营未来
-                        </a>
-                        <p class="news-latest-date">
-                            2016-12-05
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont6')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            【喜报】热烈祝贺****成功挂牌新三板
-                        </a>
-                        <p class="news-latest-date">
-                            2016-11-01
-                        </p>
-                    </li>
-                </ul>
-            </div>
+        <div class="fr cont_right" ng-include="'template/news_report.html'">
+
         </div>
     </div>
     <!-- news cont end-->

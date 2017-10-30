@@ -66,7 +66,7 @@ $().ready(function () {
      });*/
     $('.grids-nav-inner-list .grids-side-navLayer2').each(function () {
         var _this = $(this);
-        if (_this.find('a').attr('data-href') == location.hash) {
+        if (_this.find('a').attr('data-href') == location.pathname) {
             _this.addClass('list-focus');
             _this.parent('.grids-nav-inner-list').siblings('.grids-nav-inner-list').find('.grids-side-navLayer2').removeClass('list-focus');
         }
@@ -76,7 +76,7 @@ $().ready(function () {
     //判断浏览器和按钮的href;
     $('.grids-nav-inner-list .nav-inner-list-2>li').each(function () {
         var _this = $(this);
-        if (_this.find('a').attr('data-href') == location.hash) {
+        if (_this.find('a').attr('data-href') == location.pathname) {
             _this.find('a').addClass('list-focus');
             _this.parent('ul').addClass('grids-hide');
             _this.parent('.nav-inner-list-2').parent('.grids-nav-inner-list').siblings('.grids-nav-inner-list').find('.nav-inner-list-2').removeClass('grids-hide');
@@ -96,7 +96,19 @@ $().ready(function () {
         else {
             _this.find('.nav-drop-down-icon').css('background-position', '-108px 0px');
         }
+            console.log(_this.attr('data-href')+'///////'+'pathname:'+location.pathname)
+            if (_this.attr('data-href') == location.pathname) {
+                _this.css('color','#2277da');
+            }
+
         //_this.parent('.grids-nav-inner-list').find('.nav-inner-list-2').show().parent('.grids-nav-inner-list').siblings('.grids-nav-inner-list').find('.nav-inner-list-2').hide().siblings('a').find('.nav-drop-down-icon').css('background-position','-98px 0px');
+    });
+    $('.grids-nav-inner-list>a').each(function () {
+        var _this = $(this);
+        //console.log(_this.attr('data-href')+'///////'+'pathname:'+location.pathname)
+        if (_this.attr('data-href') == location.pathname) {
+            _this.css('color','#2277da');
+        }
     });
     //*****左侧侧边栏已完成
 

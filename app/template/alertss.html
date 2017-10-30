@@ -1,0 +1,72 @@
+<div id="helpdocum">
+    <!-- 搜索块header-start-->
+    <div class="h_elp_wrap fl">
+        <div class="h_elp_had fl">
+            <div class="h_elp_had-inner">
+                <h2 class="title fl" style="margin-left: 514px;">
+                    <a href="javascript:;">帮助与文档</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索块header-end-->
+    <!-- 内容header-start-->
+    <div class="maincont fl">
+        <div class="warp">
+            <div class="grids-table">
+                <div class="grids-nav" ng-include="'helpLeft.html'"></div>
+                <div class="grids-details">
+                    <div class="grids-height">
+                        <p class="grids-crumbs">
+                            <a href="javascript:;" ng-click="gotoPage('/documents/userguide')">帮助与文档</a>
+                            <i class="r_png"></i>
+                            <a href="javascript:;"> 快速入门云监控服务</a>
+                            <i class="r_png"></i>
+                            <span> 怎样配置告警</span>
+                        </p>
+                        <h1 class="grids-height-title">
+                            怎样配置告警
+                        </h1>
+                        <div class="iaas_line">
+                            <p>
+                                1、登陆系统后，点击【告警管理】下的【告警设置】，如下图所示：
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/gggj0.png" alt="">
+                            </p>
+                            <p>
+                                弹出如下图所示窗口，点击【新增告警】。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/gggj1.png" alt="">
+                            </p>
+                            <p>
+                                2、点击【添加】后，弹出如下图所示对话框： <br>
+                                3、在【告警名称】中填写要显示的标题。<br>
+                                4、在【告警范围】中，选择要监测的范围。<br>
+                                5、点击【下一步】，弹出【选择发送策略】中，需进行相关设置。<br>
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/gggj2.png" alt="">
+                            </p>
+                            <p>
+                                默认当事件连续发生2次时，发送告警，并每隔3次发送告警一次：当错误或危险连续发生两次后，开始发送告警，并每间隔3次轮询间隔发送告警一次直到监测点状态恢复正常；
+                                在60分钟内，有3次同样状态事件发送告警：在60分钟内，如果有3次错误或者危险事件，就会一直发送报警直到监测点状态恢复正常； <br>
+                                事件连续发生X次后，停止发送告警：该选项为复选框，是建议设置报警时选择该项，发生报警后，会一直报警，如果选择该项，当错误或危险发生了设置的次数后，就会停止发送报警； <br>
+                                当发过告警监测点恢复正常时发送一次告警：当发过告警监测点恢复正常时发送一次告警 <br>
+                                6、点击【下一步】弹出【选择发送方式】如下图所示：选择相应的报警方式，如选择短信报警。配置完成之后点击【完成】
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/gggj3.png" alt="">
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容header-send-->
+</div>

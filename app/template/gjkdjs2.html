@@ -1,0 +1,128 @@
+<div id="helpdocum">
+    <!-- 搜索块header-start-->
+    <div class="h_elp_wrap fl">
+        <div class="h_elp_had fl">
+            <div class="h_elp_had-inner">
+                <h2 class="title fl" style="margin-left: 514px;">
+                    <a href="javascript:;">帮助与文档</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索块header-end-->
+    <!-- 内容header-start-->
+    <div class="maincont fl">
+        <div class="warp">
+            <div class="grids-table">
+                <div class="grids-nav" ng-include="'helpLeft.html'"></div>
+                <div class="grids-details">
+                    <div class="grids-height">
+                        <p class="grids-crumbs">
+                            <a href="javascript:;" ng-click="gotoPage('/documents/userguide')">帮助与文档</a>
+                            <i class="r_png"></i>
+                            <a href="javascript:;"> 龙腾国际加速账号申请使用指南</a>
+                            <i class="r_png"></i>
+                            <span> 国际加速账号申请</span>
+                        </p>
+                        <h1 class="grids-height-title">
+                            国际加速账号使用
+                        </h1>
+                        <div class="iaas_line gjjsppp">
+                            <p>
+                                国际加速VPN账号支持PPTP、L2TP协议，可在Windows、Linux操作系统以及支持PPTP、L2TP的网络设备中使用。
+                            </p>
+                            <h2 style="font-size: 16px;margin: 14px 0;">
+                                一、Windows 操作系统配置示例（以Windows 7为例）
+                            </h2>
+                            <p>
+                                1、右键点击网络连接图标打开“网络和共享中心”。
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy1.png" alt="">
+                            </p>
+                            <p>
+                                2、点击设置新的连接或网络进行VPN拨号方式的创建！
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy2.png" alt="">
+                            </p>
+                            <p>
+                                3、在弹出的设置连接或网络的选项卡里选择“连接到工作区”。
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy3.png" alt="">
+                            </p>
+                            <p>
+                                4、选择“使用我的 Internet 连接VPN”双击后进入下一步。
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy4.png" alt="">
+                            </p>
+                            <p>
+                                5、填写VPN服务器的地址（也就是站点域名）信息后输入VPN服务器名称，完成后点击下一步。
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy5.png" alt="">
+                            </p>
+                            <p>
+                                6、输入VPN服务器管理员分配的用户名及密码后点击记住密码已防止重新输入用户名和密码。完成以上所有操作后点击连接。
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy6.png" alt="">
+                            </p>
+                            <p>
+                                7、默认情况下系统会对VPN的服务一个一个的进行尝试直到连接成功为止。
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy7_1.png" alt="">
+                            </p>
+                            <p>
+                                <img src="./images/gjzhsy7_2.png" alt="">
+                            </p>
+                            <h2 style="font-size: 16px;margin: 6px 0;">
+                                二、Linux操作系统配置示例（以CentOS，使用PPTP协议拨号为例）
+                            </h2>
+                            <p>
+                                1、首先需要安装ppp、pptp和pptp-setup软件包。
+                            </p>
+                            <p>
+                                yum install-y ppp pptp pptp-setup
+                            </p>
+                            <p>
+                                2、使用pptpsetup创建拨号连接
+                            </p>
+                            <p>
+                                pptpsetup --create VPN名字 --server 服务器IP --username 用户名 --password 密码 --encrypt –start
+                            </p>
+                            <p>
+                                示例:
+                            </p>
+                            <p>
+                                pptpsetup --create telcloud --server svpn.server.com --username  zhaow --password zhaow --encrypt –start
+                            </p>
+                            <p>
+                                3、此刻可通过ip addr 或者ifconfig查看，发现多出一个接口ppp0
+                            </p>
+                            <p>
+                                4、还需要配置下路由，走ppp0接口，具体以实际情况配置。
+                            </p>
+                            <p>
+                                参考命令
+                            </p>
+                            <p>
+                                route add default dev ppp0
+                            </p>
+                            <p>
+                                5、结束VPN连接，直接结束pptp进程即可。
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容header-send-->
+</div>

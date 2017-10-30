@@ -1,0 +1,530 @@
+<div class="body" style="width: 100%;">
+
+
+    <!-- 轮播 start -->
+    <div id="heroBanner" class="mod-hero" style="">
+        <div id="slideBox" class="slideBox">
+
+            <div class="bd">
+                <ul class="clear">
+                    <li><a class="pic an-lun-6" ng-click="gotoPage('/saas/telcloudaccelerate')" href="javascript:;"></a></li>
+                    <li><a class="pic an-lun-7" ng-click="gotoPage('/mnews_cont31')" href="javascript:;"></a></li>
+                    <li><a class="pic an-lun-1" ng-click="gotoPage('/sales')" href="javascript:;"></a></li>
+                    <li><a class="pic an-lun-2" ng-click="gotoPage('/caas/expressconnect')" href="javascript:;"></a></li>
+                    <!--<li><a class="pic an-lun-3" ng-click="gotoPage('/solutions/hybirdcloud')" href="javascript:;"></a></li>-->
+                    <li><a class="pic an-lun-4" ng-click="gotoPage('/secaas/gateway')" href="javascript:;"></a></li>
+                    <li><a class="pic an-lun-5" ng-click="gotoPage('/saas/telcloudmonitor')" href="javascript:;"></a></li>
+                    <li><a class="pic an-lun-8" ng-click="gotoPage('/secaas/anti-ddos')" href="javascript:;"></a></li>
+                </ul>
+            </div>
+
+            <div class="hd">
+                <ul></ul><!-- 自动添加li -->
+            </div>
+        </div>
+        <script type="text/javascript">
+            TouchSlide({
+                slideCell:"#slideBox",
+                titCell:".hd ul", //开启自动分页 autoPage:true ，此时设置 titCell 为导航元素包裹层
+                mainCell:".bd ul",
+                effect:"leftLoop",
+                autoPage:true,//自动分页
+                autoPlay:true, //自动播放
+                interTime:2520000
+            });
+        </script>
+    </div>
+
+    <!--四个特惠商品 start-->
+    <div class="mod-wrap mod-activity" id="J-mod-activity">
+        <div class="mod-inner">
+            <ul class="activity-list">
+                <li>
+                    <a hotrep="hp.belowbanner.news1" ng-click="gotoPage('/mfree')">
+                        <div class="advertising-icon">
+                            <picture>
+                                <!--<source srcset="images/lundown01.png"-->
+                                <!--type="image/svg+xml">-->
+                                <img src="images/lundown01.png">
+                            </picture>
+                        </div>
+                        <div class="advertising-text">
+                            <p class="title">
+                                免费体验馆
+                            </p>
+                            <p class="content">企业用户15天免费体验</p>
+                        </div>
+                        <h3 class="mobile-advertising-text">免费体验</h3>
+                    </a>
+                </li>
+                <li>
+                    <a hotrep="hp.belowbanner.news2"  ng-click="gotoPage('/giftpackage')">
+                        <div class="advertising-icon">
+                            <picture>
+                                <img src="images/lundown02.png">
+                            </picture>
+                        </div>
+                        <div class="advertising-text">
+                            <p class="title">
+                                专享礼包
+                            </p>
+                            <p class="content">新用户专享礼包</p>
+                        </div>
+                        <h3 class="mobile-advertising-text">注册有礼</h3>
+                    </a>
+                </li>
+                <li>
+                    <a hotrep="hp.belowbanner.news3"  ng-click="gotoPage('/sales')">
+                        <div class="advertising-icon">
+                            <picture>
+                                <img src="images/lundown03.png">
+                            </picture>
+                        </div>
+                        <div class="advertising-text">
+                            <p class="title">
+                                低至4折起
+                            </p>
+                            <p class="content">云产品全线降价</p>
+                        </div>
+                        <h3 class="mobile-advertising-text">四折特惠</h3>
+                    </a>
+                </li>
+                <li ng-click="gotoPage('/icp')">
+                    <a hotrep="hp.belowbanner.news4" >
+                        <div class="advertising-icon">
+                            <picture>
+                                <img src="images/lundown04.png">
+                            </picture>
+                        </div>
+                        <div class="advertising-text">
+                            <p class="title">
+                                0元备案
+                            </p>
+                            <p class="content">专属客服+全程服务</p>
+                        </div>
+                        <h3 class="mobile-advertising-text">0元备案</h3>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- 在这里有你所需的一切 start -->
+    <div class="mod-wrap mod-wrap-product-new bg-color-1">
+        <div class="mod-inner">
+
+
+
+            <div class="mod-title ct-slot">
+            </div>
+            <div class="mod-content qc-grids with-slot">
+                <h2 style="font-size: 26px;;margin-top:-30px;">在这里有你所需的一切</h2>
+                <p  style="font-size: 16px;margin:10px 0 30px 0">龙腾云TelCloud使IT、通信、安全、服务的交付更加简单、高效、可靠。</p>
+                <!--index四个动画-->
+
+                <div data-index="0" class="product-block qc-unit-4-24 qc-unit-md-1-1  qc-unit-active  "
+                     style="height: auto;">
+                    <div class="unit-box">
+                        <div class="pt-detail" style="width: auto;">
+                            <div class="pt-detail-name">
+                                <span class="pt-name-img iaas"></span>
+                                <h3 class="name-title">IaaS公有云<span class="icon-arrow"></span></h3>
+                            </div>
+                            <div class="pt-detail-sub-menu">
+                                <ul class="menu-list">
+                                    <li class="menu-item "ng-click="gotoPage('/iaas/telcloudhost')">
+                                        <div class="title">
+                                            <div class="title-text">云主机 TelCloud Host</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">为您提供简单易用、安全可靠、弹性伸缩、按需付费的计算服务</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div data-index="1" class="product-block qc-unit-4-24 qc-unit-md-1-1 " style="height: auto;">
+                    <div class="unit-box">
+
+                        <div class="pt-detail" style="width: auto;">
+                            <div class="pt-detail-name">
+                                <span class="pt-name-img caas"></span>
+                                <h3 class="name-title">CaaS电信云<span class="icon-arrow"></span></h3>
+                            </div>
+                            <div class="pt-detail-sub-menu">
+                                <ul class="menu-list">
+                                    <li class="menu-item " ng-click="gotoPage('/caas/internetaccess')">
+                                        <div class="title">
+                                            <div class="title-text">互联网接入服务</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">LSO服务生命周期理论框架下搭建、实现一站式下单、全自助便捷、高效、灵活服务</p>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-item " ng-click="gotoPage('/caas/expressconnect')">
+                                        <div class="title">
+                                            <div class="title-text">高速通道专有网络</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">在不同数据中心、云、以及办公网络之间实现高速、稳定、安全的私网通信</p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--详细内容 end-->
+                    </div>
+                </div>
+
+                <div data-index="2" class="product-block qc-unit-4-24 qc-unit-md-1-1" style="height: auto;">
+                    <div class="unit-box">
+
+                        <div class="pt-detail" style="width: auto;">
+                            <div class="pt-detail-name">
+                                <span class="pt-name-img secaas"></span>
+                                <h3 class="name-title">SECaaS安全云<span class="icon-arrow"></span></h3>
+                            </div>
+                            <div class="pt-detail-sub-menu">
+                                <ul class="menu-list">
+                                    <li class="menu-item " ng-click="gotoPage('/secaas/gateway')">
+                                        <div class="title">
+                                            <div class="title-text">智慧云网关</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">一体化融合接入、管控、优化、审计运营等功能的高性能综合应用云网关</p>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-item " ng-click="gotoPage('/secaas/anti-ddos')">
+                                        <div class="title">
+                                            <div class="title-text">云抗D</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">全自助购买多种套餐服务，防御即开即用，按需扩容，无黑洞，让您轻松防御</p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--详细内容 end-->
+                    </div>
+                </div>
+
+                <div data-index="3" class="product-block qc-unit-4-24 qc-unit-md-1-1" style="height: auto;">
+                    <div class="unit-box">
+
+                        <div class="pt-detail" style="width: auto;">
+                            <div class="pt-detail-name">
+                                <span class="pt-name-img saas"></span>
+                                <h3 class="name-title">SaaS 软件云<span class="icon-arrow"></span></h3>
+                            </div>
+                            <div class="pt-detail-sub-menu">
+                                <ul class="menu-list">
+                                    <li class="menu-item "ng-click="gotoPage('/saas/telcloudmonitor')">
+                                        <div class="title">
+                                            <div class="title-text">云监控(SaaS版)</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">易用、安全的云监控，5分钟完成部署即享高品质IT监控服务</p>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-item " ng-click="gotoPage('/saas/telcloudmonitor')">
+                                        <div class="title">
+                                            <div class="title-text">云监控(私有云版)</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">全球首款“云网管”软件，分布式架构，性能超强，支持四级架构</p>
+
+                                        </div>
+                                    </li>
+                                    <li class="menu-item " ng-click="gotoPage('/saas/telcloudaccelerate')">
+                                        <div class="title">
+                                            <div class="title-text">龙腾国际加速</div>
+                                        </div>
+                                        <div class="des">
+                                            <p class="des-text">有效解决国际访问速度慢、网络不稳定、接入不便捷等问题</p>
+
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!--详细内容 end-->
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <script>
+        $(".pt-detail-name").click(function(){
+            $(this).parents(".product-block.qc-unit-4-24.qc-unit-md-1-1").toggleClass("qc-unit-active");
+
+        });
+    </script>
+    <!-- 你的成功可以覆盖全球 start -->
+    <style>
+        .index-jjyun ul li{
+            display: inline-block;width:49%;border:1px solid #ddd;
+            text-align: center;margin-bottom:5px;
+            position: relative;
+        }
+        .index-jjyun ul li img{
+            width:25%;
+        }
+        .zhezhaocen1{
+            background: rgba(0,0,0,0.5);
+            padding:20px 0;
+        }
+        .zhezhaocen2{
+            background: rgba(0,0,0,0.3);
+            padding:20px 0;
+        }
+        .zhezhaocen1 p,.zhezhaocen2 p{
+            color: #fff;
+        }
+        .redniu .index-jjyun ul li{
+            height:160px;overflow: hidden;
+        }
+        .redniu .zhezhaocen1{
+            height:160px;
+            background: rgba(0,0,0,0.2);
+        }
+    </style>
+    <div class="mod-wrap bg-color-1" style="padding:10px 40px 30px 40px;background: #fff;">
+        <h2 style="font-size: 26px;margin-top:35px;">多种行业解决方案</h2>
+        <p  style="font-size: 16px;margin:10px 0 30px 0">龙腾云多套解决方案，助力您快速步入“互联网+”时代。</p>
+        <div class=" " style="background-color: #fff;">
+            <div class="index-jjyun ">
+                <ul style="color: #000;">
+                    <li style="background: url(images/index-solute1.jpg) no-repeat 0 0;
+                            background-size: 100%" ng-click="gotoPage('/solutions/e-commerce')">
+                        <div class="zhezhaocen1" style="">
+                            <img src="images/indexjjfa1.png" alt=""><br><br>
+                            <p><strong>电商解决方案</strong></p><br>
+                        </div>
+                    </li>
+                    <li style="background:url(images/ndex-solute2.jpg) no-repeat 0 0;
+                    background-size: 100%" ng-click="gotoPage('/solutions/idc')">
+                        <div class="zhezhaocen1" style="">
+                            <img src="images/indexjjfajr.png" alt=""><br><br>
+                            <p><strong>数据中心解决方案</strong></p><br>
+                        </div>
+                    </li>
+                    <li style="background: url(images/ndex-solute3.jpg) no-repeat 0 0;
+                    background-size: 100%" ng-click="gotoPage('/solutions/retail')">
+                        <div class="zhezhaocen2" style="">
+                            <img src="images/indexjjfawz.png" alt=""><br><br>
+                            <p><strong>零售解决方案</strong></p><br>
+                        </div>
+                    </li>
+                    <li style="background:url(images/ndex-solute4.jpg) no-repeat 0 0;
+                    background-size: 100%" ng-click="gotoPage('/solutions/hybirdcloud')">
+                        <div class="zhezhaocen2" style="">
+                            <img src="images/indexjjfayp.png" alt=""><br><br>
+                            <p><strong>混合云解决方案</strong></p><br>
+                        </div>
+                    </li>
+                    <li style="background:url(images/ndex-solute5.jpg) no-repeat 0 0;
+                    background-size: 100%" ng-click="gotoPage('/solutions/callcenter')">
+                        <div class="zhezhaocen1" style="">
+                            <img src="images/indexjjfaapp.png" alt=""><br><br>
+                            <p><strong>呼叫中心解决方案</strong></p><br>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="zhezhaocen1" style="">
+                            <img src="images/indexjjfa1.png" alt=""><br><br>
+                            <p><strong>敬请期待</strong></p><br>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="mod-wrap bg-color-1 redniu" style="padding:10px 30px 30px 30px">
+        <h2 style="font-size: 26px;margin-top:35px;">众多用户的选择</h2>
+        <p  style="font-size: 16px;margin:10px 0 30px 0">用户的信任，是龙腾云不断的前进的动力。</p>
+
+        <div class=" " style="background-color: #fff;">
+            <div class="index-jjyun ">
+                <ul style="color: #000;">
+                    <li class="clear" style="background:url(images/index-solute11.jpg) no-repeat 0 0;background-size: 160%">
+                        <div class="zhezhaocen1" style="">
+                            <p><strong>红牛</strong></p>
+                            <br>
+                            <div style="padding: 0 20px;">
+                                <p>行业领域：快速消费品领域</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear"  style="background:url(images/index-solute33.png) no-repeat 0 0;background-size: 260%">
+                        <div class="zhezhaocen1" style="">
+                            <p><strong>贝塔斯曼</strong></p>
+                            <br>
+                            <div style="padding: 0 20px; overflow: hidden">
+                                <p >行业领域：咨询领域</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear"  style="background:url(images/index-solute22.jpg) no-repeat 0 0;background-size: 232%">
+                        <div class="zhezhaocen1" style="">
+                            <p><strong>安信华</strong></p>
+                            <br>
+                            <div style="padding: 0 20px;">
+                                <p>
+                                    行业领域：科技推广和应用服务领域
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear"  style="background:url(images/index-solute44.jpg) no-repeat  -97px 0;background-size: 220%">
+                        <div class="zhezhaocen1" style="">
+                            <p><strong>宝马</strong></p>
+                            <br>
+                            <div style="padding: 0 20px;">
+                                <p>
+                                    行业领域：车辆制造领域
+                                </p>
+
+                            </div>
+                        </div>
+                    </li>
+                    <li class="clear"  style="background:url(images/zhongwang.jpg) no-repeat -59px -1px;background-size: 200%">
+                        <div class="zhezhaocen1" style="">
+                            <p><strong>中网</strong></p>
+                            <br>
+                            <div style="padding: 0 20px;">
+                                <p>
+                                    行业领域：网球领域
+                                </p>
+                            </div>
+                        </div>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--为你提供安全合规的云计算服务 start-->
+    <style>
+        .certificate li{
+            width:50%;
+            float: left;
+            text-align: center;
+            padding: 0 5px;
+        }
+        .certificate li p{
+            font-size:12px;
+        }
+        .certificate li img {
+            /*width:75%;*/
+            width:45%;
+            margin:10px 0
+        }
+    </style>
+    <div class="mod-wrap " style="padding:10px 30px 30px 30px">
+        <h2 style="font-size: 26px;margin-top:35px;">为你提供安全合规的云计算服务</h2>
+        <p  style="font-size: 16px;margin:10px 0 30px 0">龙腾云通过国内外权威标准的合规认证，给你安全性和合规性的保证</p>
+        <ul class="clear certificate">
+            <li  ng-click="gotoPage('/documents/iso27001')">
+                <img src="../images/iso-27001.png" alt="">
+                <p>ISO</p>
+                <p> 27001</p>
+            </li>
+            <li ng-click="gotoPage('/documents/iso20000')">
+                <img src="../images/iso-20000.png" alt="">
+                <p>ISO</p>
+                <p> 20000</p>
+            </li>
+            <li>
+
+        </ul>
+        <ul class="clear certificate">
+            <li ng-click="gotoPage('/documents/iso9001')">
+                <img src="../images/iso-9001.png" alt="">
+                <p>ISO</p>
+                <p> 9001</p>
+            </li>
+            <li ng-click="gotoPage('/documents/iso14001')">
+                <img src="../images/iso14001.png" alt="">
+                <p>ISO</p>
+                <p> 14001</p>
+            </li>
+
+        </ul>
+    </div>
+
+
+
+    <!-- 新闻 + 长期活动-->
+    <div class="mod-wrap  mod-wrap-news bg-color-1" style="background-color: #f2f2f5;">
+        <div class="mod-inner">
+            <div class="mod-content qc-grids ct-slot">
+                <div class="qc-unit-16-24 qc-unit-md-1-2 qc-unit-sm-1-1">
+                    <div class="mod-title"><h2 class="title ">新鲜动态</h2>
+                        <div class="sub-tab">
+                            <ul id="newsList">
+                                <li class="sub-text sub-text-selected"><a href="javascript:;">最新</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="newsSubList">
+                        <div class="unit-box">
+                            <ul class="news-list">
+                                <li class="news"><a hotrep="hp.news.1.3" class="news-item" ng-click="gotoPage('/mnews_cont31')">
+                                    <span class="date">2017.09.28 </span><span class="stick">|</span>
+                                    <span class="text">我们领证了—龙腾佳讯获得工信部颁发的云计算牌照</span></a>
+                                </li>
+                                <li class="news"><a hotrep="hp.news.1.3" class="news-item" ng-click="gotoPage('/mnews_cont30')">
+                                    <span class="date">2017.09.22 </span><span class="stick">|</span>
+                                    <span class="text">龙腾云抗D为宝马汽车网络安全保驾护航</span></a>
+                                </li>
+                                <li class="news"><a hotrep="hp.news.1.3" class="news-item" ng-click="gotoPage('/mnews_cont29')">
+                                    <span class="date">2017.09.11 </span><span class="stick">|</span>
+                                    <span class="text">龙腾云知云学堂丨网络世界的网红—SDN</span></a>
+                                </li>
+                                <li class="news"><a hotrep="hp.news.1.3" class="news-item" ng-click="gotoPage('/mnews_cont28')">
+                                    <span class="date">2017.08.31 </span><span class="stick">|</span>
+                                    <span class="text">助力大数据产业腾飞 推动基础设施先行</span></a>
+                                </li>
+                                <li class="news"><a hotrep="hp.news.1.3" class="news-item" ng-click="gotoPage('/mnews_cont27')">
+                                    <span class="date">2017.08.29 </span><span class="stick">|</span>
+                                    <span class="text">让基础设施研究变得更可见—清华大学数据科学研究院大数据基础设施研究中心成立</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <p class="text-line"><a href="" hotrep="hp.news.1.more" class="links"  ng-click="gotoPage('/about/news')">查看全部</a></p>
+                    </div>
+                </div>
+                <!--长期活动-->
+                <div class="qc-unit-8-24 qc-unit-md-1-2 qc-unit-sm-1-1">
+                    <div class="mod-title">
+                        <h2 class="title ">长期活动</h2>
+                    </div>
+                    <div class="unit-box" id="hotPicSlot">
+                        <a href=""  ng-click="gotoPage('/giftpackage')"
+                           target="_blank" hotrep="hp.news.pic.1"
+                           style="display: block;">
+                            <img class="event-img" src="images/huodongdddddd.png">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+</div>
+

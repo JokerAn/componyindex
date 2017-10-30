@@ -1,0 +1,236 @@
+Index: template/index-2.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- template/index-2.html	(revision 2951)
++++ template/index-2.html	(revision )
+@@ -5,6 +5,7 @@
+     <div class="index-nav-black"
+          style="position: absolute;top:0;left:0;width:100%;height:65px;background:rgba(0,0,0,0.8);z-index: 1000;display: none;"></div>
+     <div class="lunbo clear">
++
+         <div class="lunbo-big clear">
+             <div class="lunbo-team">
+                 <div class="lunimg" style="cursor: pointer;" ng-click="gotoPage('/sales')">
+@@ -16,80 +17,37 @@
+             </div>
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun3.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-10">
+-                    <!-- <h1>零网费，使用龙腾云</h1>
+-                     <h4>
+-                         即刻加入，四种优惠政策，供您选择。
+-                         <br>
+-                     </h4>-->
+                     <a ng-click="gotoPage('telcloudmonitor')" href=""><i class="icon iconfont"></i>了解详情</a>
+                 </div>
+             </div>
+-
+-
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun3.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-2">
+-                    <!--  <h1>
+-                          TelCloud 云监控
+-                      </h1>
+-                      <h4>
+-                          利用业界先进的云技术、大数据技术以及移动
+-                          <br>
+-                          互联彻底重构了运维体系，提供高效、安全
+-                          <br>
+-                          易用的一站式IT海量敏捷运维管理平台
+-                      </h4>-->
+                     <a ng-click="gotoPage('/iaas/telcloudhost')" href=""><i class="icon iconfont"></i>了解详情</a>
+                 </div>
+             </div>
+-
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun4.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-3">
+-                   <!-- <h1>私有云是和公有云一样的
+-                        <br>企业基础设施</h1>
+-                    <h4>
+-                        提升资源利用率
+-                        <br>
+-                        提供数据共享
+-                        <br>
+-                        降低企业运营成本
+-                    </h4>-->
+                     <a ng-click="gotoPage('/news-cont6')" href=""><i class="icon iconfont"></i>了解详情</a>
+                 </div>
+             </div>
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun1.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-4">
+-                   <!-- <h1>LSO电信服务编排</h1>
+-                    <h4>能够处理从客户订单到服务交付的控制，从数据采集到
+-                        <br>
+-                        确保性能等级，从故障修复到提供使用报告，再到为客<br>户提供各种分析报告等等的一切业务。
+-                    </h4>-->
+                     <a ng-click="gotoPage('/giftpackage')" href=""><i class="icon iconfont"></i>了解详情</a>
+ 
+                 </div>
+             </div>
+-
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun3.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-5">
+-                   <!-- <h1>高速通道服务正式商用</h1>
+-                    <h4>在不同数据中心、云、以及办公网络之间实现
+-                        <br>
+-                        高速、稳定、安全的私网通信
+-                    </h4>-->
+                     <a ng-click="gotoPage('/caas/expressconnect')" href=""><i class="icon iconfont"></i>了解详情</a>
+ 
+                 </div>
+@@ -110,83 +68,49 @@
+             </div>
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun3.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-7">
+-                  <!--  <h1>
+-                        TelCloud智慧云网关
+-                    </h1>
+-                    <h4>一体化融合网络接入、管控、优化、审计、
+-                        <br>
+-                        运营等功能的高性能综合应用云网关。
+-                        <br>
+-                        面向政府、金融、教育、企业等多行业客户
+-                        <br>
+-                        不同网络规模业务场景。
+-                    </h4>-->
+                     <a ng-click="gotoPage('/openstackcloud')" href=""><i class="icon iconfont"></i>了解详情</a>
+                 </div>
+             </div>
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun4.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-8">
+-                    <!--  <h1>龙腾佳讯成功挂牌新三板</h1>
+-                      <h4>股票代码：839433</h4>-->
+                     <a ng-click="gotoPage('/caas/internetaccess')" href=""><i class="icon iconfont"></i>了解详情</a>
+                 </div>
+             </div>
+-
+             <div class="lunbo-team">
+                 <div class="lunimg" ng-click="gotoPage('/sales')">
+-                    <!--<img src="images/lun3.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner-9">
+-                    <!-- <h1>私有云是和公有云一样的
+-                         <br>企业基础设施</h1>
+-                     <h4>
+-                         提升资源利用率
+-                         <br>
+-                         提供数据共享
+-                         <br>
+-                         降低企业运营成本
+-                     </h4>-->
+                     <a ng-click="gotoPage('/secaas/gateway')" href=""><i class="icon iconfont"></i>了解详情</a>
+                 </div>
+ 
+             </div>
+             <div class="lunbo-team">
+                 <div class="lunimg">
+-                    <!--<img src="images/lun3.png" alt="">-->
+                 </div>
+                 <div class="lunbo-inner lunbo-inner">
+-                    <!--<h1>全新官网，全新形象</h1>
+-                    <h4>
+-                        将完整、全新的 TelCloud 形象展示于此，希望您能
+-                        <br>
+-                        受到我们的与众不同。
+-                    </h4>-->
+-                    <!-- <div class="tl-element" style="margin-left: 612px;margin-top: -64px;position: absolute;opacity: 1;left: 352px;">
+-                        <img style="height: auto;" width="400" src="/images/logo.png"></div>
+-                   <div class="inner-11_log"></div>-->
+-                    <!--<a ng-click="gotoPage('/caas/expressconnect')" href=""><i class="icon iconfont"></i>了解详情</a>-->
+                 </div>
+             </div>
+-
++            <div class="lunbo-team">
++                <div class="lunimg">
++                </div>
++                <div class="lunbo-inner lunbo-inner">
++                </div>
++            </div>
+ 
+ 
+         </div>
+         <div class="cControl">
+             <a class="shang fl" href="javascript:;">
+-
+                 <i class="icon iconfont">&#xe697;</i>
+             </a>
+             <a class="xia fr" href="javascript:;">
+                 <i class="icon iconfont">&#xe6a7;</i>
+             </a>
+         </div>
+-
+         <ul class="lunbo-circle ">
+             <li>
+                 <span class="names">周年惠</span>
+@@ -223,11 +147,16 @@
+             <li>
+                 <span class="names">安全云</span>
+                 <span class="lunindex">10</span></li>
+-            <li style="opacity:1;">
++            <li  >
+                 <span class="names">新官网</span>
+ 
+                 <span class="lunindex">11</span>
+             </li>
++            <li style="opacity:1;">
++                <span class="names">全球加速</span>
++
++                <span class="lunindex">12</span>
++            </li>
+ 
+         </ul>
+     </div>
+Index: template/qqjscp.html
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- template/qqjscp.html	(revision 2951)
++++ template/qqjscp.html	(revision )
+@@ -1,5 +1,5 @@
+ <div id="yjkproduct" class="clear">
+-    <input class="leftLight" type="hidden" value="0" name="yjkproductclass">
++    <input class="leftLight" type="hidden" value="0" name="qqjscpclass">
+ 
+     <div class="show">
+         <div class="clear">
+Index: css/main.css
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- css/main.css	(revision 2951)
++++ css/main.css	(revision )
+@@ -1013,6 +1013,10 @@
+ 
+ 
+ 
++div.lunbo-team:nth-child(12) .lunimg {
++    background: url(../images/qqjscplog.png) no-repeat center center;
++    height: 500px;
++}
+ div.lunbo-team:nth-child(11) .lunimg {
+     background: url(../images/xinxingxiang.png) no-repeat center center;
+     height: 500px;

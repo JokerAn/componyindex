@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../longtelwebjs/jquery-1.12.4.js"></script>
+
+</head>
+<body>
+<!--11111111111111
+<button onclick="up()">上一页</button>
+<button onclick="down()">下一页</button>-->
+<!--<input type="text" id="inp">-->
+<ul id="box">
+</ul>
+<script>
+    /*<li class="news-latest">
+     <a href="javascript:;" class='fl'>
+     <img src="./images/gaoxiao111.jpg" alt="">
+     </a>
+     <h2 class="news-latest-title">
+     <a ng-click="gotoPage('/news-cont1')" href="javascript:;">
+     高校移动创新大赛，龙腾云助你飞翔
+     </a>
+     </h2>
+     <p class="news-latest-cont">
+     中国高校计算机大赛 是面向全国高校各专业在校学生的科技类竞赛活动， 旨在促进高校计算机课程教学内容和教学方法改革，激发学生创新意识，
+     提升学生计算机问题求解水平，特别是计算机程序设计、大数据处理和移动应用的设计与开发能力，提高全国高校计算机应用水平。
+     </p>
+     <p class="news-latest-date">
+     2016-05-18
+     <span></span>
+     龙腾云
+     </p>
+     </li>  */
+
+    var oUl=$('#box');
+
+
+        for(var i=5; i>1; i-- )
+                /*for(var i=0; i<5; i++ )*/
+        {
+            oUl.append('<li></li>');
+            (function(index){
+
+            })(i);
+        }
+        var aLi=$('#box> li');
+        var aNwsdata={
+            "aLi0":[
+
+                {
+                    //li>class
+                    "class":'news-latest',
+                    //创建a标签 href="javascript:;" class='fl'
+                    "href":'javascript:;',
+                    //a里面包含img 设置src
+
+                    'aSrc':[
+                        {"src":'1.png'},{"src":'2.png'}
+                    ],
+                    //创建h2 class="news-latest-title"
+                    //然后在h2里创建a标签 设置 ng-click="gotoPage('/news-cont1')"
+
+                }
+            ]
+        }
+        aLi.each(function(){
+            var _this=$(this);
+            _this.attr('class',aNwsdata.aLi0[0].class);
+            // _this.attr('ng-click','gotoPage("'+'/'+'news-cont'++'")');
+            _this.append('<a href="javascript:;">'+i+
+                    '<img alt="">' +
+                    '</a>');
+        })
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /*//上一页
+     function up(){
+     //首先 你页面上要有一个标志  标志当前是第几页
+     //然后在这里减去1 再放进链接里
+     var pageno=1-1;
+     if(pageno==0){
+     alert("当前已经是第一页!");
+     return false;
+     }
+     /!*这里在将当前页数赋值到页面做显示标志*!/
+     window.location.href="new1.htm?b=123&b=qwe&c="+pageno;
+     }
+     //下一页
+     function down(){
+     //首先 你页面上要有一个标志  标志当前是第几页
+     //然后在这里加上1 再放进链接里
+     var pageno=1+1;
+     if(pageno==1){
+     alert("当前已经是最后一页!");
+     return false;
+     }
+     /!*这里在将当前页数赋值到页面做显示标志*!/
+
+     window.location.href="/app/view2/new"+pageno+".html";
+     }*/
+</script>
+</body>
+</html>

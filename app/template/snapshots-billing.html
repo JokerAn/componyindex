@@ -1,0 +1,47 @@
+<div id="helpdocum">
+    <!-- 搜索块header-start-->
+    <div class="h_elp_wrap fl">
+        <div class="h_elp_had fl">
+            <div class="h_elp_had-inner">
+                <h2 class="title fl" style="margin-left: 514px;">
+                    <a href="javascript:;">帮助与文档</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索块header-end-->
+    <!-- 内容header-start-->
+    <div class="maincont fl">
+        <div class="warp">
+            <div class="grids-table">
+                <div class="grids-nav" ng-include="'helpLeft.html'"></div>
+                <div class="grids-details">
+                    <div class="grids-height">
+                        <p class="grids-crumbs">
+                            <a href="javascript:;" ng-click="gotoPage('/documents/userguide')">帮助与文档</a>
+                            <i class="r_png"></i>
+                            <a href="javascript:;"> IaaS备份与恢复指南</a>
+                            <i class="r_png"></i>
+                            <span> 步骤四：计费模式</span>
+                        </p>
+                        <h1 class="grids-height-title">
+                            步骤四：计费模式
+                        </h1>
+                        <div class="iaas_line">
+                            <p>
+                                备份按照备份链的总容量进行收费，每个备份链的总容量等于该备份链中所有备份点容量的总和，容量总和不足1G时，按照1G计算。
+                            </p>
+                            <p>
+                                注解 由于增量备份保存了相对于上一个备份点的变化量，当备份链很长时，
+                                这些变化量的累加可能会造成备份链总容量大小过大， 产生较多的费用；所以我们建议定期创建新的备份链，并将旧的备份链删除。
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容header-send-->
+</div>

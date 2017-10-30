@@ -1,0 +1,85 @@
+<!--footer start -->
+<div class="qc-footer J-qc-footer">
+    <div class="qc-footer-website">
+        <div class="qc-footer-website">
+            <div class="columns">
+                <div class="cl-ct"><h3><a class="ct-title">云产品</a></h3>
+                    <ul class="ct-list">
+                        <li ng-click="gotoPage('/iaas/telcloudhost')"><a href="javascript:;">云主机</a></li>
+                        <li ng-click="gotoPage('/openstackcloud')"><a href="javascript:;">私有云</a></li>
+                        <li ng-click="gotoPage('/caas/expressconnect')"><a href="javascript:;">高速通道</a></li>
+                        <li ng-click="gotoPage('/secaas/gateway')"><a href="">智慧云网关</a></li>
+                        <li ng-click="gotoPage('/secaas/anti-ddos')"><a href="javascript:;">云抗D</a></li>
+                        <li ng-click="gotoPage('/saas/telcloudmonitor')"><a href="javascript:;">云监控</a></li>
+                        <li ng-click="gotoPage('/saas/telcloudaccelerate')"><a href="javascript:;">国际加速</a></li>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="cl-ct"><h3><a class="ct-title">解决方案</a></h3>
+                    <ul class="ct-list">
+                        <li ng-click="gotoPage('/solutions/retail')" ><a href="javascript:;" class="">零售</a></li>
+                        <li ng-click="gotoPage('/solutions/hybirdcloud')" ><a href="javascript:;" class="">混合云</a></li>
+                        <li ng-click="gotoPage('/solutions/e-commerce')" ><a href="javascript:;" class="">电商OTO</a></li>
+                        <li ng-click="gotoPage('/solutions/callcenter')" ><a href="javascript:;" class="">呼叫中心</a></li>
+                        <li ng-click="gotoPage('/solutions/idc')" ><a href="javascript:;" class="">数据中心</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns">
+                <div class="cl-ct"><h3><a class="ct-title">文档与支持</a></h3>
+                    <ul class="ct-list">
+                        <li ng-click="gotoPage('/documents/userguide')"><a href="javascript:;" class="">产品文档</a></li>
+                        <li ng-click="gotoPage('/documents/caas/createservice')"><a href="javascript:;" class="">快速入门</a></li>
+                        <li ng-click="gotoPage('/partners')"><a href="javascript:;" class="">推广合作</a></li>
+                        <li ng-click="gotoPage('/partners')" ><a href="javascript:;" class="">渠道伙伴</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="columns column-follow">
+                <div class="cl-ct"><h3><a class="ct-title">关于龙腾云</a></h3>
+                    <ul class="ct-list">
+                        <li ng-click="gotoPage('/about')"><a >关于我们</a></li>
+                        <li ng-click="gotoPage('/about/contact_us')"><a >联系我们</a></li>
+                        <li ng-click="gotoPage('/about/news')"><a >新闻动态</a></li>
+                        <li ng-click="gotoPage('/documents/tos')"><a >服务条款</a></li>
+                        <li>
+                            <a href="javascript:;"  id="wechat-qq">微信公众号</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="m-call">
+            <a href="tel:400-888-1360" class="call-num">客服电话：400-888-1360</a>
+        </div>
+        <div class="m-qr" id="m-qr" style="display:none">
+            <img src="images/longtel-weixin.jpg" class="qr-img">
+            <div class="op">长按保存二维码</div>
+        </div>
+    </div>
+    <div class="qc-footer-blogroll">
+        <div class="blogroll-inner">
+            <div class="link-set">
+                <div class="links">
+                    <p class="line">
+                        <span class="slide">京ICP备14055286号-1   京公网安备（运营商备案号）11010502026560</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--footer end -->
+<script>
+    $(".cl-ct").click(function(){
+        $(this).parent(".columns").toggleClass("m-open")
+    });
+    $("#wechat-qq").click(function(){
+        $("#m-qr").show();
+    });
+    $("#m-qr").click(function(){
+        $(this).hide();
+    });
+</script>

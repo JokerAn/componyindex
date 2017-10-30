@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        ul{
+            list-style: none;
+        }
+        .btnbox>li{
+            padding:4px 10px;
+            width:10px;
+            margin:4px;
+            cursor: pointer;
+            float: left;
+            border:1px solid #000;
+            text-align: center;
+            color:#000;
+        }
+    </style>
+    <script src="../longtelwebjs/jquery-1.12.4.js"></script>
+    <script>
+        $().ready(function(){
+            var anews_cont=$('.contbox>li');
+            var arr=[];
+            if(anews_cont.length >4)
+            {
+                alert('da');
+                anews_cont.each(function(){
+                    if($(this).length <=4)
+                    {
+                        arr.push($(this));
+                        console.log(arr)
+                    }
+                    else if($(this).length >4)
+                    {
+                        $(this).hide();
+                    }
+                });
+            }
+        });
+    </script>
+</head>
+<body>
+    <div class="box">
+        <ul class="contbox">
+            <li>内容1</li>
+            <li>内容2</li>
+            <li>内容3</li>
+            <li>内容4</li>
+            <li>内容5</li>
+            <li>内容6</li>
+            <li>内容7</li>
+            <li>内容8</li>
+            <li>内容9</li>
+            <li>内容10</li>
+        </ul>
+        <ul class="btnbox">
+            <li>1</li>
+            <li>2</li>
+        </ul>
+        <input type="button" value="下一页">
+    </div>
+</body>
+</html>

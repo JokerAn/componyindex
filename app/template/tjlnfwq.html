@@ -1,0 +1,135 @@
+<div id="helpdocum">
+    <!-- 搜索块header-start-->
+    <div class="h_elp_wrap fl">
+        <div class="h_elp_had fl">
+            <div class="h_elp_had-inner">
+                <h2 class="title fl" style="margin-left: 514px;">
+                    <a href="javascript:;">帮助与文档</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索块header-end-->
+    <!-- 内容header-start-->
+    <div class="maincont fl">
+        <div class="warp">
+            <div class="grids-table">
+                <div class="grids-nav" ng-include="'helpLeft.html'"></div>
+                <div class="grids-details">
+                    <div class="grids-height">
+                        <p class="grids-crumbs">
+                            <a href="javascript:;" ng-click="gotoPage('/documents/userguide')">帮助与文档</a>
+                            <i class="r_png"></i>
+                            <a href="javascript:;"> 快速入门云监控服务</a>
+                            <i class="r_png"></i>
+                            <span> 怎样添加一个Linux服务器</span>
+                        </p>
+                        <h1 class="grids-height-title">
+                            怎样添加一个Linux服务器
+                        </h1>
+                        <div class="iaas_line">
+                            <p>
+                                Linux服务器的监测可以通以下四种方式进行监测。下面分别对每一种监测方式进行介绍。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq0.png" alt="">
+                            </p>
+                            <p>
+                                1、Agent监测方式：该方式需要在监控对象（所监控的Linux服务器）上安装探针软件。
+                            </p>
+                            <p>
+                                1）探针安装完毕后，在龙腾云云监控管理控制平台，【分组管理】中点击【添加设备】
+                            </p>
+                            <p>
+                                <img  src="./images/lnxfwq1.png" alt="">
+                            </p>
+
+                            <p>
+                                2）选择【添加设备】，弹出【添加设备】对话框，在【添加设备】下看到“Agent Linux”，如下图所示。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq2.png" alt="">
+                            </p>
+                            <p>
+                                选中上图中的【Agent Linux】，点击，弹出【Agent Linux】对话框，如下图所示。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq3.png" alt="">
+                            </p>
+                            <p>
+                                “基本设置”选项卡下设置
+                            </p>
+                            <p>
+                                Linux服务器地址：填写Linux服务器的IP地址<br>
+                                Agent端口：Agent的端口，默认为2198<br>
+                                标题：填写显示的标题
+                            </p>
+                            <p>
+                                2、SSH方式监测
+                            </p>
+                            <p>
+                                1）选中【SSH Linux】，如下图
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq4.png" alt="">
+                            </p>
+                            <p>
+                                点击，弹出【SSH Linux】对话框，如下图所示。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq3_1.png" alt="">
+                            </p>
+                            <p>
+                                “基本设置”选项卡下设置
+                            </p>
+                            <p>
+                                Linux服务器地址：填写被监测服务器的地址 <br>
+                                密钥文件：是需要用户提供的一个加密文件，因为SSH、Telnet方式可以有公钥、密钥方式进行加密、解密，如果用户通过这种方式，需要提供密钥文件<br>
+                                端口号：SSH的端口号<br>
+                                登录名：被监测服务器系统的用户名<br>
+                                登陆密码：被监测服务器系统的密码<br>
+                                标题：显示的标题
+                            </p>
+                            <p>
+                                点击【下一步】即可完成SSH方式监测Linux的设置。
+                            </p>
+                            <p>
+                                3、Telnet方式监测：和SSH 方式监测类似，所不同的是，SSH监测方式要求服务器开启SSH服务，
+                                而Telnet监测方式则是要求服务器开启Telnet服务。
+                            </p>
+                            <p>
+                                4、SNMP方式监测
+                            </p>
+                            <p>
+                                选择【添加设备】，弹出【添加设备】对话框，在【添加设备】下看到“SNMP Linux”，如下图所示。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq5.png" alt="">
+                            </p>
+                            <p>
+                                选中上图中的【SNMP Linux】，点击，弹出【SNMP Linux】对话框，如下图所示。
+                            </p>
+                            <p>
+                                <img style="width: 780px;" src="./images/lnxfwq6.png" alt="">
+                            </p>
+                            <p>
+                                “基本设置”选项卡中设置如下：
+                            </p>
+                            <p>
+                                Linux服务器IP:填写要监测的服务器的IP地址 <br>
+                                SNMP端口：SNMP的端口，默认为161<br>
+                                可读共同体名称：SNMP的共同体名称<br>
+                                版本：SNMP的版本号，建议选择V2<br>
+                                标题：填写显示的标题
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容header-send-->
+</div>

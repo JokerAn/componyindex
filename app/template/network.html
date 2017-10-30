@@ -1,0 +1,58 @@
+<div id="helpdocum">
+    <!-- 搜索块header-start-->
+    <div class="h_elp_wrap fl">
+        <div class="h_elp_had fl">
+            <div class="h_elp_had-inner">
+                <h2 class="title fl" style="margin-left: 514px;">
+                    <a href="javascript:;">帮助与文档</a>
+                </h2>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索块header-end-->
+    <!-- 内容header-start-->
+    <div class="maincont fl">
+        <div class="warp">
+            <div class="grids-table">
+                <div class="grids-nav" ng-include="'helpLeft.html'"></div>
+                <div class="grids-details">
+                    <div class="grids-height">
+                        <p class="grids-crumbs">
+                            <a href="javascript:;" ng-click="gotoPage('/documents/userguide')">帮助与文档</a>
+                            <i class="r_png"></i>
+                            <a href="javascript:;">laaS网络介绍</a>
+                            <i class="r_png"></i>
+                            <span> 网络介绍指南</span>
+                        </p>
+                        <h1 class="grids-height-title">
+                            网络介绍指南
+                        </h1>
+                        <div class="iaas_line">
+                            <p>
+                                为了方便用户快速上手创建虚机，龙腾云为用户自动创建了 私有网络，通过防火墙、路由器来进行隔离，保证用户的安全。
+                            </p>
+                            <p>
+                                在创建服务的同时，每个服务默认1台路由器和 防火墙。创建服务将自动搭建私有网络分配公网IP，
+                                配置路由规则，防火墙规则， 若需要更改服务创建完成后，进入服务详情页面可更改相关信息。
+                                在服务内创建的主机，都是在同一网段的内网下。用户可以通过不同的端口号来访问每台主机。
+                            </p>
+                            <p>
+                                将私有网络内的服务暴露在公网上，假定我们希望将主机 192.168.200.2 的 TCP 80 暴露出来，
+                                依然使用 80 号端口，将主机 192.168.100.2 的 TCP 80 暴露出来， 并修改为 8080 号端口。
+                            </p>
+                            <p>
+                                点击“更多操作”按钮，选择端口配置，来进行端口的转发操作。
+                            </p>
+                            <p style="margin-top: 20px;">
+                                <img src="./images/port_configuration.png" alt="" style="width: 630px;">
+                            </p>
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 内容header-send-->
+</div>

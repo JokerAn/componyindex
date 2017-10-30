@@ -3,6 +3,65 @@
  */
 var a = 1;
 var timer = null, timer2 = null;
+function shifudenglu() {
+// console.log(1111);
+// $.get(anurl+'iaas/position',function(){
+//
+// })
+//     .beforeSend(function (xhr) {
+//         xhr.setRequestHeader ("Authorization", "Basic " + btoa("cloudAdmin:123123:z@z.com"));
+//     })
+//     .success(function (data) {
+//         console.log(data)
+//     })
+//     .error(function (e) {
+//         console.log(1)
+//         console.error(e)
+//     })
+
+
+    $.ajax({
+        type: 'post',
+        async: true,
+        url: "console/jsonuser!getUserName",
+        data: {},
+        dataType: 'json',
+    }).success(function (data) {
+        console.log(data);
+        if (data == "") {
+            $("#meidenglu").css({"display": "inline-block"});
+            $("#denglule").css({"display": "none"});
+            $("#dlwenzi").css({"display": "inline-block"});
+        } else {
+            $("#meidenglu").css({"display": "none"});
+            $("#denglule").css({"display": "inline-block"});
+            $(".huiyuanming").html(data);
+            $("#dlwenzi").css({"display": "none"});
+            // alert( $("#dlwenzi").css("display"))
+
+
+        }
+    })
+};
+shifudenglu();
+
+
+
+var linshi={};
+function priceshow() {
+    if (document.body.scrollTop) { //非标准写法,chrome能识别
+        bodytop= document.body.scrollTop;//正好顶部要被隐藏的临界点
+    }
+    else { //标准写法
+        bodytop = document.documentElement.scrollTop;
+    }
+    if(bodytop>linshi.priceshowtop){
+        $(".price-right").addClass("fixed");
+    }else {
+        $(".price-right").removeClass("fixed");
+    }
+}
+
 
 
 
@@ -49,10 +108,10 @@ $("li[data-name='nav-down-aa'] ul li").click(function () {
 });
 
 function md(element) {
-    console.log(22);
+    // console.log(22);
 
     $('body').animate({"scrollTop": $(element).offset().top - 110}, 300);
-    console.log(document.body.scrollTop);
+    // console.log(document.body.scrollTop);
     if (document.body.scrollTop) {
         $('body').animate({"scrollTop": $(element).offset().top - 110}, 300);
     }
@@ -145,7 +204,18 @@ $(".tousuclose").click(function () {
     $(".tousu3").hide();
 });
 
-
+$(document).on("input","input[type='range']",function(){
+    var max=$(this).attr("max");
+    var val=$(this).val();
+    var a=val/max*100+"%";
+    $(this).css({"background-size":a+" 100%"});
+});
+$(document).on("click","input[type='range']",function(){
+    var max=$(this).attr("max");
+    var val=$(this).val();
+    var a=val/max*100+"%";
+    $(this).css({"background-size":a+" 100%"});
+});
 var smallt = {};
 function smaltitle() {
     var p = parseInt($(this).scrollLeft());
@@ -197,6 +267,7 @@ $("body").on("mouseover", ".neirong-title li", function () {
 $(document).scroll(function () {
     gtop();
     smaltitle();
+    priceshow();
 });
 $().ready(function () {
 

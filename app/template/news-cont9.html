@@ -9,13 +9,13 @@
     <div class="news-wapcont">
         <div class="fl cont_left">
             <h2 class="cont_left-title">
-                <a ng-click="gotoPage('/news')" href="javascript:;">
+                <a ng-click="gotoPage('/about/news')" href="javascript:;">
                     < 返回最近报道列表
                 </a>
             </h2>
             <div class="cont_list">
                 <h1>
-                    ****成为清华大数据产业联合会理事单位
+                    龙腾佳讯成为清华大数据产业联合会理事单位
                 </h1>
             </div>
             <p class="news_cont-data">
@@ -31,7 +31,7 @@
                     <img src="./images/qinghua111.png" style="width: 640px;">
                 </p>
                 <p>
-                    经清华大数据产业联合会审核，北京****科技股份公司（以下简称“****”）正式加入清华大数据产业联合会，
+                    经清华大数据产业联合会审核，北京龙腾佳讯科技股份公司（以下简称“龙腾佳讯”）正式加入清华大数据产业联合会，
                     并成为清华大数据产业联合会理事单位。
                 </p>
                 <p>
@@ -42,13 +42,13 @@
                     以产业需求带动复合型大数据人才的培养，推动大数据生态系统中的各合作共赢。
                 </p>
                 <p>
-                    此次****公司携手清华大数据产业联合会，成为联合会理事单位，表明联合会对****的认可和对****未来发展的信心。 通过与清华大数据产业联合会的深入合作，
-                    ****将会不遗余力的致力于大数据方向的探索，为大数据方向的学生提供更多的实习和就业机会。
+                    此次龙腾佳讯公司携手清华大数据产业联合会，成为联合会理事单位，表明联合会对龙腾佳讯的认可和对龙腾佳讯未来发展的信心。 通过与清华大数据产业联合会的深入合作，
+                    龙腾佳讯将会不遗余力的致力于大数据方向的探索，为大数据方向的学生提供更多的实习和就业机会。
                 </p>
-                <p>未来，**还将在大数据领域开发更多应用和产品，解决众多行业出现的需求和痛点，
+                <p>未来，龙腾云还将在大数据领域开发更多应用和产品，解决众多行业出现的需求和痛点，
                     助力企业传统行业的全面升级。“动一下鼠标就可以秒级操作PB级别的数据”确实让人兴奋不已呢！</p>
                 <p>
-                    PS：**产品概览
+                    PS：龙腾云产品概览
                 </p>
                 <p>
                     <img src="./images/chanpingailan111.png" style="width: 640px;">
@@ -56,75 +56,23 @@
             </div>
             <div class="news_cont-node">
                 <div style="    color: #2277da;">
-                    下一篇报道：
+                    上一篇报道：
                     <a ng-click="gotoPage('/news-cont8')" href="javascript:;" style="color:#333;display: inline-block;">
-                        "**"携手伙伴共展云途，看看这是一朵什么云？
+                        "龙腾云"携手伙伴共展云途，看看这是一朵什么云？
                     </a>
                 </div>
-                <!--<div style="      margin-top: 16px;  color: #2277da;">
+                <div style="      margin-top: 16px;  color: #2277da;">
                     下一篇报道：
-                    <a href="javascript:;"style="color:#333;display: inline-block;">
-
+                    <a ng-click="gotoPage('/news-cont10')" href="javascript:;"style="color:#333;display: inline-block;">
+                        全新形象、全新改变 ——龙腾云官网全新改版上线
                     </a>
-                </div>-->
+                </div>
             </div>
 
         </div>
 
-        <div class="fr cont_right">
-            <div class="right_cont">
-                <h2 class="cont_rightt-title">
-                    热门报道
-                    <span class="line fl"></span>
-                </h2>
-                <ul class="cont_right-list">
-                    <li>
-                        <a ng-click="gotoPage('/news-cont10')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            全新形象、全新改变 ——**官网全新改版上线
-                        </a>
-                        <p class="news-latest-date">
-                            2017-02-13
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont9')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            ****成为清华大数据产业联合会理事单位
-                        </a>
-                        <p class="news-latest-date">
-                            2017-01-25
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont8')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            "**"携手伙伴共展云途，看看这是一朵什么云？
-                        </a>
-                        <p class="news-latest-date">
-                            2016-12-19
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont7')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            合众力 作云端 运千家 营未来
-                        </a>
-                        <p class="news-latest-date">
-                            2016-12-05
-                        </p>
-                    </li>
-                    <li>
-                        <a ng-click="gotoPage('/news-cont6')" href="javascropt:;">
-                            <span class="dot fl"></span>
-                            【喜报】热烈祝贺****成功挂牌新三板
-                        </a>
-                        <p class="news-latest-date">
-                            2016-11-01
-                        </p>
-                    </li>
-                </ul>
-            </div>
+        <div class="fr cont_right" ng-include="'template/news_report.html'">
+
         </div>
     </div>
     <!-- news cont end-->
